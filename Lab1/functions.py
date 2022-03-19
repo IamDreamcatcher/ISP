@@ -1,12 +1,14 @@
+from fileinput import filename
 import re
-import statistics
-from collections import defaultdict
-from typing import List, Tuple, Dict
 import constants
+from collections import defaultdict
+from collections import Counter
+from typing import List, Tuple, Dict
 
 
 def get_text(filename: str) -> str:
-    text = open(filename, "r").read()
+    with open(filename, "r") as file:
+        text = file.read()
 
     return text
 
@@ -14,33 +16,25 @@ def get_text(filename: str) -> str:
 def get_words(text: str) -> List[str]:
     words: List[str] = []
 
-    temp_words = text.split()
-    for word in temp_words:
-        word = word.strip(constants.PUNCTUATION_MARKS)
-        if len(word) > 0:
-            words.append(word.lower())
+    splitted_words = text.split()
+    for word in splitted_words:
+        words.append(word.strip(constants.PUNCTUATION_MARKS).lower())
 
-    return words
+    return [x for x in words if len(x) > 0]
 
 
-def get_sentences_statistics(text: str) -> Tuple[float, float]:
+def get_word_amount(text: str) -> List[int]:
     words_amount: List[int] = []
 
     sentences = re.split(constants.REGEX_FOR_SENTENCE, text)
     for sentence in sentences:
-        if len(sentence) > 0:
-            words_amount.append(len(get_words(sentence)))
+        words_amount.append(len(get_words(sentence)))
 
-    median_value = statistics.median(words_amount)
-    average_value = statistics.fmean(words_amount)
-
-    return median_value, average_value
+    return words_amount
 
 
 def get_dict_of_words(text: List[str]) -> Dict[str, int]:
-    dict_of_words: Dict[str, int] = defaultdict(int)
-    for word in text:
-        dict_of_words[word] += 1
+    dict_of_words: Dict[str, int] = Counter(text)
 
     return dict_of_words
 
