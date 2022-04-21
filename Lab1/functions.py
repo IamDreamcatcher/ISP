@@ -1,8 +1,8 @@
-import re
+import constants
 import statistics
+import re
 from collections import defaultdict
 from typing import List, Tuple, Dict
-import constants
 
 
 def get_text(filename: str) -> str:
@@ -28,6 +28,7 @@ def get_sentences_statistics(text: str) -> Tuple[float, float]:
 
     sentences = re.split(constants.REGEX_FOR_SENTENCE, text)
     for sentence in sentences:
+        print(sentence)
         if len(sentence) > 0:
             words_amount.append(len(get_words(sentence)))
 
@@ -45,7 +46,7 @@ def get_dict_of_words(text: List[str]) -> Dict[str, int]:
     return dict_of_words
 
 
-def find_top_ngrams(dict_of_words: Dict[str, int], n: int, k: int) -> List[Tuple[str, int]]:
+def find_top_ngrams(dict_of_words: Dict[str, int], n: int, k: int) -> List[str]:
     ngrams: Dict[str, int] = defaultdict(int)
     for word, value in dict_of_words.items():
         for left_position in range(0, len(word) - n + 1):
