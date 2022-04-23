@@ -3,16 +3,16 @@ YAML = "YAML"
 TOML = "TOML"
 
 TYPE = "**type**"
-VALUE = "**value**"
+DATA = "**data**"
 
 CODE = "__code__"
 GLOBAL = "__globals__"
 
 FUNCTION_ATTRIBUTES = [
+    "__code__",
+    "__name__",
+    "__defaults__",
     "__closure__"
-    "__defaults__"
-    "__name__"
-    "__code__"
 ]
 
 OBJECT_ARGS = [
@@ -33,3 +33,5 @@ OBJECT_ARGS = [
     'co_freevars',
     'co_cellvars'
 ]
+
+
