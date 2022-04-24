@@ -7,6 +7,9 @@ import lib.lib_constants
 def serialize(obj):
     obj_type = type(obj)
     obj_type_name = obj_type.__name__
+    if inspect.isclass(obj):
+        obj_type_name = "class"
+
     data = {lib.lib_constants.TYPE: obj_type_name}
 
     match obj_type_name:
@@ -21,9 +24,9 @@ def serialize(obj):
                 key = serialize(cur_key)
                 value = serialize(cur_value)
                 data[lib.lib_constants.DATA].append([key, value])
-        case "function" | "method":
+        case "function":
             data[lib.lib_constants.DATA] = serialize_function(obj)
-        case "type":
+        case "class":
             data[lib.lib_constants.DATA] = serialize_class(obj)
         case _:
             if inspect.ismodule(obj):
@@ -55,17 +58,30 @@ def serialize_function(obj):
             for name in names:
                 if name == func_name:
                     data[lib.lib_constants.GLOBAL][name] = serialize(func_name)
-                elif name in globals_inst and name not in __builtins__ and not inspect.ismodule(name):
+                elif name in globals_inst:
                     data[lib.lib_constants.GLOBAL][name] = serialize(globals_inst[name])
 
     return data
 
 
 def serialize_class(obj):
-    pass
+    if obj.__name__ == "object":
+        return
+    data = {"**name**": serialize(obj.__name__)}
+    hierarchy = ()
+    for o in obj.__bases__:
+        base_class = serialize_class(o)
+        if base_class is not None:
+            hierarchy += (base_class,)
+
+    data["**hierarchy**"] = serialize(hierarchy)
+    data["**dict**"] = serialize(dict(obj.__dict__))
+
+    return data
 
 
 def serialize_class_obj(obj):
+
     pass
 
 
@@ -80,11 +96,13 @@ def serialize_instance(obj):
 
 def deserialize(obj):
     obj_type = type(obj)
-
     if obj_type != dict:
         return obj
+    if obj.get(lib.lib_constants.TYPE):
+        obj_type_name = obj[lib.lib_constants.TYPE]
+    else:
+        obj_type_name = "special_dict"
 
-    obj_type_name = obj[lib.lib_constants.TYPE]
     match obj_type_name:
         case "int" | "float" | "bool" | "complex" | "str" | "NoneType":
             return get_primitive(obj[lib.lib_constants.DATA], obj_type_name)
@@ -98,11 +116,11 @@ def deserialize(obj):
             data = bytes(data)
         case "dict":
             data = {}
-            for o in obj:
+            for o in obj[lib.lib_constants.DATA]:
                 data[deserialize(o[0])] = deserialize(o[1])
         case "function":
             data = deserialize_function(obj[lib.lib_constants.DATA])
-        case "type":
+        case "class":
             data = deserialize_class(obj[lib.lib_constants.DATA])
         case "class_object":
             data = deserialize_class_object(obj[lib.lib_constants.DATA])
@@ -130,14 +148,19 @@ def deserialize_function(obj):
                  func_attributes["__defaults__"], func_attributes["__closure__"]]
 
     function = FunctionType(*func_code)
-    if function.__name__ in function.__getattribute__(lib.lib_constants.GLOBAL):
-        function.__getattribute__(lib.lib_constants.GLOBAL)[function.__name__] = function
+
+    if func_attributes["__name__"] in function.__getattribute__(lib.lib_constants.GLOBAL):
+        function.__getattribute__(lib.lib_constants.GLOBAL)[func_attributes["__name__"]] = function
 
     return function
 
 
 def deserialize_class(obj):
-    pass
+    name = deserialize(obj["**name**"])
+    hierarchy = deserialize(obj["**hierarchy**"])
+    dictionary = deserialize(obj["**dict**"])
+
+    return type(name, hierarchy, dictionary)
 
 
 def deserialize_class_object(obj):
@@ -162,7 +185,7 @@ def get_code_data(obj):
     return code_data
 
 
-def get_primitive(obj: object, obj_type_name: str):
+def get_primitive(obj, obj_type_name):
     match obj_type_name:
         case "int":
             return int(obj)

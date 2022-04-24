@@ -1,4 +1,6 @@
 import inspect
+import math
+from abc import ABC
 
 import lib.lib_constants
 from lib.serialization.custom_serialization import serialize, deserialize
@@ -24,12 +26,38 @@ def kek(a, b = 4):
     return a
 
 
-def lol():
-    print(3)
+def test_fact(n):
+    if n == 0:
+        return  1
+    else:
+        return n * test_fact(n - 1)
+
+glob = 5
+
+
+def lol(n):
+    return test_fact(n) * glob
+
+
+def sinx(x):
+    return math.sin(x)
+
+
+class A:
+    aba = "kek"
+
+    @staticmethod
+    def kik():
+        print("Make AGA")
+
+
+class B:
+    lol = "lol"
+
 
 def out():
-    b = deserialize(serialize(kek))(1)
-
+    k = deserialize(serialize(B))
+    print(k.lol)
 
     
     #raise_power_to_3 = gfg(3)
