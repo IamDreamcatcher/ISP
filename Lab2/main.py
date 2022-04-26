@@ -1,5 +1,6 @@
 import inspect
 import math
+
 from abc import ABC
 
 import lib.lib_constants
@@ -39,8 +40,10 @@ def lol(n):
     return test_fact(n) * glob
 
 
-def sinx(x):
-    return math.sin(x)
+c = 3
+
+def sinx():
+    return math.sin(1)
 
 
 class A:
@@ -52,21 +55,13 @@ class A:
 
 
 class B:
-    lol = "lol"
+    lol = math.sin(1)
 
 
 def out():
-    k = deserialize(serialize(B))
+    lupa = B
+    k = deserialize(serialize(lupa))
     print(k.lol)
-
-    
-    #raise_power_to_3 = gfg(3)
-
-    #c = deserialize(serialize(raise_power_to_3))(3)
-
-    #print(raise_power_to_3.__getattribute__(lib.lib_constants.GLOBAL))
-    #print(kek.__closure__)
-    #print(serialize(f))
 
 
 if __name__ == '__main__':

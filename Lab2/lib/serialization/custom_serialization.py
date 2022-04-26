@@ -9,6 +9,8 @@ def serialize(obj):
     obj_type_name = obj_type.__name__
     if inspect.isclass(obj):
         obj_type_name = "class"
+    if inspect.ismodule(obj):
+        obj_type_name = "module"
 
     data = {lib.lib_constants.TYPE: obj_type_name}
 
@@ -28,10 +30,10 @@ def serialize(obj):
             data[lib.lib_constants.DATA] = serialize_function(obj)
         case "class":
             data[lib.lib_constants.DATA] = serialize_class(obj)
+        case "module":
+            data[lib.lib_constants.DATA] = {"module": obj.__name__}
         case _:
-            if inspect.ismodule(obj):
-                serialize_instance(obj)
-            elif hasattr(obj, "__dict__"):
+            if hasattr(obj, "__dict__"):
                 data[lib.lib_constants.TYPE] = "class_object"
                 data[lib.lib_constants.DATA] = serialize_class_obj(obj)
             else:
@@ -58,7 +60,8 @@ def serialize_function(obj):
             for name in names:
                 if name == func_name:
                     data[lib.lib_constants.GLOBAL][name] = serialize(func_name)
-                elif name in globals_inst:
+                elif name in globals_inst and type(globals_inst[name]).__name__ != "builtin_function_or_method" \
+                        and name not in __builtins__:
                     data[lib.lib_constants.GLOBAL][name] = serialize(globals_inst[name])
 
     return data
@@ -81,8 +84,12 @@ def serialize_class(obj):
 
 
 def serialize_class_obj(obj):
-
-    pass
+    serialized_class = serialize_class(obj.__class__)
+    serialized_obj_dict = serialize(obj.__dict__)
+    return {
+        "**class**": serialized_class,
+        "**obj_dict**": serialized_obj_dict
+    }
 
 
 def serialize_instance(obj):
@@ -124,6 +131,8 @@ def deserialize(obj):
             data = deserialize_class(obj[lib.lib_constants.DATA])
         case "class_object":
             data = deserialize_class_object(obj[lib.lib_constants.DATA])
+        case "module":
+            data = __import__(obj[lib.lib_constants.DATA]["module"])
         case _:
             data = {}
             for key, value in obj.items():
@@ -164,7 +173,13 @@ def deserialize_class(obj):
 
 
 def deserialize_class_object(obj):
-    pass
+    deserialized_class = deserialize_class(obj["**class**"])
+    deserialized_obj_dict = deserialize(obj["**obj_dict**"])
+
+    data = deserialized_class()
+    data.__dict__ = deserialized_obj_dict
+
+    return data
 
 
 def get_global_data(obj):
