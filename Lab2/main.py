@@ -13,20 +13,6 @@ class F:
     pass
 
 # this is a nested function
-def gfg(raise_power_to):
-
-    def power(number):
-        return number ** raise_power_to
-    return power
-
-
-def kek(a, b = 4):
-    a = "aboba"
-    if False:
-        kek(1, 2)
-    b = sin(1)
-    return a
-
 
 def test_fact(n):
     if n == 0:
@@ -50,8 +36,7 @@ def sinx():
 class A:
     aba = "kek"
 
-    @staticmethod
-    def kik():
+    def kik(self):
         print("Make AGA")
 
 
@@ -60,16 +45,10 @@ class B:
 
 
 def out():
-    #print(type(math.sin))
-    dictionary = serialize({'kok\'s': 4, 'bob': 5})
+    dictionary = to_json(serialize(A))
     print(dictionary)
-    print(to_json(dictionary))
-    k = to_json(dictionary)
-    print(from_json(k, 0, len(k) - 1))
-    #k = deserialize(serialize(sinx))
-    #print(k())
+    pop = deserialize(from_json(dictionary, 0, len(dictionary)))
+    obj = pop()
+    obj.kik()
 if __name__ == '__main__':
     out()
-#co_name': {'**type**': 'str', '**data**': 'sinx'}
-#co_names': {'**type**': 'tuple', '**data**': [{'**type**': 'str', '**data**': 'sin'}]},
-#'__globals__': {'sin': {'**type**': 'builtin_function_or_method', '**data**': {'__doc__': {'**type**': 'str', '**data**': 'Return the sine of x (measured in radians).'}, '__module__': {'**type**': 'str', '**data**': 'math'}

@@ -1,6 +1,3 @@
-import lib.lib_constants
-
-
 def to_json(obj: object):
     dictionary_string = str(obj)
     json_string = ""
@@ -20,28 +17,70 @@ def to_json(obj: object):
 
 def from_json(json_string, left, right):
     if json_string[left] == '[':
-        while json_string[right] != ']':
-            right -= 1
+        balance = 1
+        data = []
+        prev_left = left + 1
+        el_balance = 0
 
-        data = list(from_json(json_string, left + 1, right - 1))
+        for i in range(left + 1, right + 1):
+            if json_string[i] == '[':
+                balance += 1
+                el_balance += 1
+            elif json_string[i] == ']':
+                balance -= 1
+                el_balance -= 1
+
+            if json_string[i] == '{':
+                el_balance += 1
+            elif json_string[i] == '}':
+                el_balance -= 1
+
+            if el_balance == 0 and prev_left < i:
+                data.append(from_json(json_string, prev_left, i + 1))
+                prev_left = i + 3
+
+            if balance == 0:
+                break
     elif json_string[left] == '{':
-        while json_string[right] != '}':
-            right -= 1
+        balance = 1
+        data = {}
+        el_balance = 0
+        key_board = left + 1
+        value_board = -1
 
-        left += 14
-        data_type = ""
-        while json_string[left] != '"' and json_string[left + 1] != ',':
-            data_type += json_string[left]
-            left += 1
+        for i in range(left + 1, right + 1):
+            if json_string[i] == '{':
+                balance += 1
+                el_balance += 1
+            elif json_string[i] == '}':
+                balance -= 1
+                el_balance -= 1
 
-        left += 15
-        raw_data = from_json(json_string, left, right - 1)
-        data = {lib.lib_constants.TYPE: data_type, lib.lib_constants.DATA: raw_data}
+            if json_string[i] == '[':
+                el_balance += 1
+            elif json_string[i] == ']':
+                el_balance -= 1
+
+            if el_balance == 0 and json_string[i] == ':':
+                value_board = i
+
+            if el_balance == 0 and value_board != -1 and (json_string[i + 1] == ',' or json_string[i + 1] == '}'):
+                key = from_json(json_string, key_board, value_board - 1)
+                value = from_json(json_string, value_board + 2, i)
+
+                if isinstance(key, str):
+                    key = key[1: -1]
+                if isinstance(value, str):
+                    value = value[1: -1]
+
+                data[key] = value
+                value_board = -1
+                key_board = i + 3
+
+            if balance == 0:
+                break
     else:
         data = ""
-        #print(json_string)
-        #print(left)
-        #print(right)
         while left <= right:
             data += json_string[left]
             left += 1

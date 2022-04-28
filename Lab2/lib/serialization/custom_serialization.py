@@ -16,7 +16,7 @@ def serialize(obj):
 
     match obj_type_name:
         case "int" | "float" | "bool" | "complex" | "str" | "NoneType":
-            data[lib.lib_constants.DATA] = obj
+            data[lib.lib_constants.DATA] = str(obj)
         case "list" | "tuple" | "bytes":
             data[lib.lib_constants.DATA] = [serialize(cur) for cur in list(obj)]
         case "dict":
