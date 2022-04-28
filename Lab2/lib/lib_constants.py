@@ -8,14 +8,14 @@ DATA = "**data**"
 CODE = "__code__"
 GLOBAL = "__globals__"
 
-FUNCTION_ATTRIBUTES = [
+SPECIAL_FUNC_ATTRIBUTES = [
     "__code__",
     "__name__",
     "__defaults__",
     "__closure__"
 ]
 
-OBJECT_ARGS = [
+CO_ARGS = [
     'co_argcount',
     'co_posonlyargcount',
     'co_kwonlyargcount',

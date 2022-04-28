@@ -47,7 +47,7 @@ def serialize_function(obj):
     content = inspect.getmembers(obj)
 
     for o in content:
-        if o[0] not in lib.lib_constants.FUNCTION_ATTRIBUTES:
+        if o[0] not in lib.lib_constants.SPECIAL_FUNC_ATTRIBUTES:
             continue
         data[o[0]] = serialize(o[1])
 
@@ -60,8 +60,7 @@ def serialize_function(obj):
             for name in names:
                 if name == func_name:
                     data[lib.lib_constants.GLOBAL][name] = serialize(func_name)
-                elif name in globals_inst and type(globals_inst[name]).__name__ != "builtin_function_or_method" \
-                        and name not in __builtins__:
+                elif name in globals_inst:
                     data[lib.lib_constants.GLOBAL][name] = serialize(globals_inst[name])
 
     return data
@@ -194,7 +193,7 @@ def get_global_data(obj):
 def get_code_data(obj):
     code_data = []
 
-    for current_arg in lib.lib_constants.OBJECT_ARGS:
+    for current_arg in lib.lib_constants.CO_ARGS:
         code_data.append(deserialize(obj[current_arg]))
 
     return code_data
