@@ -1,9 +1,8 @@
-from lib.serializers.abstract_serializer import AbstractSerializer
 from lib.parsers.json_parser import to_json, from_json
 from lib.serialization.custom_serialization import serialize, deserialize
 
 
-class JsonSerializer(AbstractSerializer):
+class JsonSerializer:
     @staticmethod
     def dump(obj, file_path):
         with open(file_path, 'w') as file:

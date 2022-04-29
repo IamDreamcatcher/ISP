@@ -1,9 +1,8 @@
-from lib.serializers.abstract_serializer import AbstractSerializer
 from lib.parsers.toml_parser import to_toml, from_toml
 from lib.serialization.custom_serialization import serialize, deserialize
 
 
-class TomlSerializer(AbstractSerializer):
+class TomlSerializer:
     @staticmethod
     def dump(obj, file_path):
         with open(file_path, 'w') as file:
@@ -12,7 +11,7 @@ class TomlSerializer(AbstractSerializer):
     @staticmethod
     def load(file_path):
         with open(file_path, 'r') as file:
-            return TomlSerializer.loads(file_path.read())
+            return TomlSerializer.loads(file.read())
 
     @staticmethod
     def dumps(obj):

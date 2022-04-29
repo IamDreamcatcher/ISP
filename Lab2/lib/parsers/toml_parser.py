@@ -1,9 +1,10 @@
-from toml import loads, dumps
+import tomli
+import tomli_w
 
 
 def to_toml(obj):
-    return dumps(obj)
+    return tomli_w.dumps(obj)
 
 
 def from_toml(string):
-    return loads(string)
+    return tomli.loads(string)

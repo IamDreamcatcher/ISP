@@ -102,13 +102,13 @@ def serialize_instance(obj):
 
 def deserialize(obj):
     obj_type = type(obj)
-    if obj_type != dict:
-        return obj
-    if obj.get(lib.lib_constants.TYPE):
-        obj_type_name = obj[lib.lib_constants.TYPE]
-    else:
-        obj_type_name = "special_dict"
 
+    if obj_type == dict and obj.get(lib.lib_constants.TYPE):
+        obj_type_name = obj[lib.lib_constants.TYPE]
+    elif obj_type == dict:
+        obj_type_name = "special_dict"
+    else:
+        return obj
     match obj_type_name:
         case "int" | "float" | "bool" | "complex" | "str" | "NoneType":
             return get_primitive(obj[lib.lib_constants.DATA], obj_type_name)

@@ -1,9 +1,8 @@
-from lib.serializers.abstract_serializer import AbstractSerializer
 from lib.parsers.yaml_parser import to_yaml, from_yaml
 from lib.serialization.custom_serialization import serialize, deserialize
 
 
-class YamlSerializer(AbstractSerializer):
+class YamlSerializer:
     @staticmethod
     def dump(obj, file_path):
         with open(file_path, 'w') as file:
