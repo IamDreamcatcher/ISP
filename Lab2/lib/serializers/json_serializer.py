@@ -1,4 +1,4 @@
-from lib.parsers.json_parser import to_json, from_json
+from lib.parsers.json_parser import convert_to_json, convert_from_json
 from lib.serialization.custom_serialization import serialize, deserialize
 
 
@@ -11,14 +11,14 @@ class JsonSerializer:
     @staticmethod
     def load(file_path):
         with open(file_path, 'r') as file:
-            return JsonSerializer.loads(file_path.read())
+            return JsonSerializer.loads(file.read())
 
     @staticmethod
     def dumps(obj):
-        return to_json(serialize(obj))
+        return convert_to_json(serialize(obj))
 
     @staticmethod
     def loads(string):
-        return deserialize(from_json(string))
+        return deserialize(convert_from_json(string, 0, len(string)))
 
 

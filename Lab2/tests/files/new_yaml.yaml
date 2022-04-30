@@ -1,0 +1,1303 @@
+'**data**':
+  '**dict**':
+    '**data**':
+    - - '**data**': __module__
+        '**type**': str
+      - '**data**': tests.data_for_test
+        '**type**': str
+    - - '**data**': state
+        '**type**': str
+      - '**data**': lox
+        '**type**': str
+    - - '**data**': __doc__
+        '**type**': str
+      - '**data**': None
+        '**type**': NoneType
+    '**type**': dict
+  '**hierarchy**':
+    '**data**':
+    - '**data**':
+      - - '**data**': '**type**'
+          '**type**': str
+        - '**data**': class
+          '**type**': str
+      - - '**data**': '**data**'
+          '**type**': str
+        - '**data**':
+          - - '**data**': '**name**'
+              '**type**': str
+            - '**data**':
+              - - '**data**': '**type**'
+                  '**type**': str
+                - '**data**': str
+                  '**type**': str
+              - - '**data**': '**data**'
+                  '**type**': str
+                - '**data**': Person
+                  '**type**': str
+              '**type**': dict
+          - - '**data**': '**hierarchy**'
+              '**type**': str
+            - '**data**':
+              - - '**data**': '**type**'
+                  '**type**': str
+                - '**data**': tuple
+                  '**type**': str
+              - - '**data**': '**data**'
+                  '**type**': str
+                - '**data**': []
+                  '**type**': list
+              '**type**': dict
+          - - '**data**': '**dict**'
+              '**type**': str
+            - '**data**':
+              - - '**data**': '**type**'
+                  '**type**': str
+                - '**data**': dict
+                  '**type**': str
+              - - '**data**': '**data**'
+                  '**type**': str
+                - '**data**':
+                  - '**data**':
+                    - '**data**':
+                      - - '**data**': '**type**'
+                          '**type**': str
+                        - '**data**': str
+                          '**type**': str
+                      - - '**data**': '**data**'
+                          '**type**': str
+                        - '**data**': __module__
+                          '**type**': str
+                      '**type**': dict
+                    - '**data**':
+                      - - '**data**': '**type**'
+                          '**type**': str
+                        - '**data**': str
+                          '**type**': str
+                      - - '**data**': '**data**'
+                          '**type**': str
+                        - '**data**': tests.data_for_test
+                          '**type**': str
+                      '**type**': dict
+                    '**type**': list
+                  - '**data**':
+                    - '**data**':
+                      - - '**data**': '**type**'
+                          '**type**': str
+                        - '**data**': str
+                          '**type**': str
+                      - - '**data**': '**data**'
+                          '**type**': str
+                        - '**data**': type
+                          '**type**': str
+                      '**type**': dict
+                    - '**data**':
+                      - - '**data**': '**type**'
+                          '**type**': str
+                        - '**data**': str
+                          '**type**': str
+                      - - '**data**': '**data**'
+                          '**type**': str
+                        - '**data**': Machine
+                          '**type**': str
+                      '**type**': dict
+                    '**type**': list
+                  - '**data**':
+                    - '**data**':
+                      - - '**data**': '**type**'
+                          '**type**': str
+                        - '**data**': str
+                          '**type**': str
+                      - - '**data**': '**data**'
+                          '**type**': str
+                        - '**data**': __init__
+                          '**type**': str
+                      '**type**': dict
+                    - '**data**':
+                      - - '**data**': '**type**'
+                          '**type**': str
+                        - '**data**': function
+                          '**type**': str
+                      - - '**data**': '**data**'
+                          '**type**': str
+                        - '**data**':
+                          - - '**data**': __closure__
+                              '**type**': str
+                            - '**data**':
+                              - - '**data**': '**type**'
+                                  '**type**': str
+                                - '**data**': NoneType
+                                  '**type**': str
+                              - - '**data**': '**data**'
+                                  '**type**': str
+                                - '**data**': None
+                                  '**type**': str
+                              '**type**': dict
+                          - - '**data**': __code__
+                              '**type**': str
+                            - '**data**':
+                              - - '**data**': '**type**'
+                                  '**type**': str
+                                - '**data**': code
+                                  '**type**': str
+                              - - '**data**': '**data**'
+                                  '**type**': str
+                                - '**data**':
+                                  - - '**data**': __doc__
+                                      '**type**': str
+                                    - '**data**':
+                                      - - '**data**': '**type**'
+                                          '**type**': str
+                                        - '**data**': str
+                                          '**type**': str
+                                      - - '**data**': '**data**'
+                                          '**type**': str
+                                        - '**data**': Create a code object.  Not for
+                                            the faint of heart.
+                                          '**type**': str
+                                      '**type**': dict
+                                  - - '**data**': co_argcount
+                                      '**type**': str
+                                    - '**data**':
+                                      - - '**data**': '**type**'
+                                          '**type**': str
+                                        - '**data**': int
+                                          '**type**': str
+                                      - - '**data**': '**data**'
+                                          '**type**': str
+                                        - '**data**': '2'
+                                          '**type**': str
+                                      '**type**': dict
+                                  - - '**data**': co_cellvars
+                                      '**type**': str
+                                    - '**data**':
+                                      - - '**data**': '**type**'
+                                          '**type**': str
+                                        - '**data**': tuple
+                                          '**type**': str
+                                      - - '**data**': '**data**'
+                                          '**type**': str
+                                        - '**data**': []
+                                          '**type**': list
+                                      '**type**': dict
+                                  - - '**data**': co_code
+                                      '**type**': str
+                                    - '**data**':
+                                      - - '**data**': '**type**'
+                                          '**type**': str
+                                        - '**data**': bytes
+                                          '**type**': str
+                                      - - '**data**': '**data**'
+                                          '**type**': str
+                                        - '**data**':
+                                          - '**data**':
+                                            - - '**data**': '**type**'
+                                                '**type**': str
+                                              - '**data**': int
+                                                '**type**': str
+                                            - - '**data**': '**data**'
+                                                '**type**': str
+                                              - '**data**': '124'
+                                                '**type**': str
+                                            '**type**': dict
+                                          - '**data**':
+                                            - - '**data**': '**type**'
+                                                '**type**': str
+                                              - '**data**': int
+                                                '**type**': str
+                                            - - '**data**': '**data**'
+                                                '**type**': str
+                                              - '**data**': '1'
+                                                '**type**': str
+                                            '**type**': dict
+                                          - '**data**':
+                                            - - '**data**': '**type**'
+                                                '**type**': str
+                                              - '**data**': int
+                                                '**type**': str
+                                            - - '**data**': '**data**'
+                                                '**type**': str
+                                              - '**data**': '124'
+                                                '**type**': str
+                                            '**type**': dict
+                                          - '**data**':
+                                            - - '**data**': '**type**'
+                                                '**type**': str
+                                              - '**data**': int
+                                                '**type**': str
+                                            - - '**data**': '**data**'
+                                                '**type**': str
+                                              - '**data**': '0'
+                                                '**type**': str
+                                            '**type**': dict
+                                          - '**data**':
+                                            - - '**data**': '**type**'
+                                                '**type**': str
+                                              - '**data**': int
+                                                '**type**': str
+                                            - - '**data**': '**data**'
+                                                '**type**': str
+                                              - '**data**': '95'
+                                                '**type**': str
+                                            '**type**': dict
+                                          - '**data**':
+                                            - - '**data**': '**type**'
+                                                '**type**': str
+                                              - '**data**': int
+                                                '**type**': str
+                                            - - '**data**': '**data**'
+                                                '**type**': str
+                                              - '**data**': '0'
+                                                '**type**': str
+                                            '**type**': dict
+                                          - '**data**':
+                                            - - '**data**': '**type**'
+                                                '**type**': str
+                                              - '**data**': int
+                                                '**type**': str
+                                            - - '**data**': '**data**'
+                                                '**type**': str
+                                              - '**data**': '100'
+                                                '**type**': str
+                                            '**type**': dict
+                                          - '**data**':
+                                            - - '**data**': '**type**'
+                                                '**type**': str
+                                              - '**data**': int
+                                                '**type**': str
+                                            - - '**data**': '**data**'
+                                                '**type**': str
+                                              - '**data**': '0'
+                                                '**type**': str
+                                            '**type**': dict
+                                          - '**data**':
+                                            - - '**data**': '**type**'
+                                                '**type**': str
+                                              - '**data**': int
+                                                '**type**': str
+                                            - - '**data**': '**data**'
+                                                '**type**': str
+                                              - '**data**': '83'
+                                                '**type**': str
+                                            '**type**': dict
+                                          - '**data**':
+                                            - - '**data**': '**type**'
+                                                '**type**': str
+                                              - '**data**': int
+                                                '**type**': str
+                                            - - '**data**': '**data**'
+                                                '**type**': str
+                                              - '**data**': '0'
+                                                '**type**': str
+                                            '**type**': dict
+                                          '**type**': list
+                                      '**type**': dict
+                                  - - '**data**': co_consts
+                                      '**type**': str
+                                    - '**data**':
+                                      - - '**data**': '**type**'
+                                          '**type**': str
+                                        - '**data**': tuple
+                                          '**type**': str
+                                      - - '**data**': '**data**'
+                                          '**type**': str
+                                        - '**data**':
+                                          - '**data**':
+                                            - - '**data**': '**type**'
+                                                '**type**': str
+                                              - '**data**': NoneType
+                                                '**type**': str
+                                            - - '**data**': '**data**'
+                                                '**type**': str
+                                              - '**data**': None
+                                                '**type**': str
+                                            '**type**': dict
+                                          '**type**': list
+                                      '**type**': dict
+                                  - - '**data**': co_filename
+                                      '**type**': str
+                                    - '**data**':
+                                      - - '**data**': '**type**'
+                                          '**type**': str
+                                        - '**data**': str
+                                          '**type**': str
+                                      - - '**data**': '**data**'
+                                          '**type**': str
+                                        - '**data**': /home/bubuntu/Labs/ISP/Lab2/tests/data_for_test.py
+                                          '**type**': str
+                                      '**type**': dict
+                                  - - '**data**': co_firstlineno
+                                      '**type**': str
+                                    - '**data**':
+                                      - - '**data**': '**type**'
+                                          '**type**': str
+                                        - '**data**': int
+                                          '**type**': str
+                                      - - '**data**': '**data**'
+                                          '**type**': str
+                                        - '**data**': '23'
+                                          '**type**': str
+                                      '**type**': dict
+                                  - - '**data**': co_flags
+                                      '**type**': str
+                                    - '**data**':
+                                      - - '**data**': '**type**'
+                                          '**type**': str
+                                        - '**data**': int
+                                          '**type**': str
+                                      - - '**data**': '**data**'
+                                          '**type**': str
+                                        - '**data**': '67'
+                                          '**type**': str
+                                      '**type**': dict
+                                  - - '**data**': co_freevars
+                                      '**type**': str
+                                    - '**data**':
+                                      - - '**data**': '**type**'
+                                          '**type**': str
+                                        - '**data**': tuple
+                                          '**type**': str
+                                      - - '**data**': '**data**'
+                                          '**type**': str
+                                        - '**data**': []
+                                          '**type**': list
+                                      '**type**': dict
+                                  - - '**data**': co_kwonlyargcount
+                                      '**type**': str
+                                    - '**data**':
+                                      - - '**data**': '**type**'
+                                          '**type**': str
+                                        - '**data**': int
+                                          '**type**': str
+                                      - - '**data**': '**data**'
+                                          '**type**': str
+                                        - '**data**': '0'
+                                          '**type**': str
+                                      '**type**': dict
+                                  - - '**data**': co_linetable
+                                      '**type**': str
+                                    - '**data**':
+                                      - - '**data**': '**type**'
+                                          '**type**': str
+                                        - '**data**': bytes
+                                          '**type**': str
+                                      - - '**data**': '**data**'
+                                          '**type**': str
+                                        - '**data**':
+                                          - '**data**':
+                                            - - '**data**': '**type**'
+                                                '**type**': str
+                                              - '**data**': int
+                                                '**type**': str
+                                            - - '**data**': '**data**'
+                                                '**type**': str
+                                              - '**data**': '0'
+                                                '**type**': str
+                                            '**type**': dict
+                                          - '**data**':
+                                            - - '**data**': '**type**'
+                                                '**type**': str
+                                              - '**data**': int
+                                                '**type**': str
+                                            - - '**data**': '**data**'
+                                                '**type**': str
+                                              - '**data**': '1'
+                                                '**type**': str
+                                            '**type**': dict
+                                          '**type**': list
+                                      '**type**': dict
+                                  - - '**data**': co_lnotab
+                                      '**type**': str
+                                    - '**data**':
+                                      - - '**data**': '**type**'
+                                          '**type**': str
+                                        - '**data**': bytes
+                                          '**type**': str
+                                      - - '**data**': '**data**'
+                                          '**type**': str
+                                        - '**data**':
+                                          - '**data**':
+                                            - - '**data**': '**type**'
+                                                '**type**': str
+                                              - '**data**': int
+                                                '**type**': str
+                                            - - '**data**': '**data**'
+                                                '**type**': str
+                                              - '**data**': '0'
+                                                '**type**': str
+                                            '**type**': dict
+                                          - '**data**':
+                                            - - '**data**': '**type**'
+                                                '**type**': str
+                                              - '**data**': int
+                                                '**type**': str
+                                            - - '**data**': '**data**'
+                                                '**type**': str
+                                              - '**data**': '5'
+                                                '**type**': str
+                                            '**type**': dict
+                                          '**type**': list
+                                      '**type**': dict
+                                  - - '**data**': co_name
+                                      '**type**': str
+                                    - '**data**':
+                                      - - '**data**': '**type**'
+                                          '**type**': str
+                                        - '**data**': str
+                                          '**type**': str
+                                      - - '**data**': '**data**'
+                                          '**type**': str
+                                        - '**data**': __init__
+                                          '**type**': str
+                                      '**type**': dict
+                                  - - '**data**': co_names
+                                      '**type**': str
+                                    - '**data**':
+                                      - - '**data**': '**type**'
+                                          '**type**': str
+                                        - '**data**': tuple
+                                          '**type**': str
+                                      - - '**data**': '**data**'
+                                          '**type**': str
+                                        - '**data**':
+                                          - '**data**':
+                                            - - '**data**': '**type**'
+                                                '**type**': str
+                                              - '**data**': str
+                                                '**type**': str
+                                            - - '**data**': '**data**'
+                                                '**type**': str
+                                              - '**data**': power
+                                                '**type**': str
+                                            '**type**': dict
+                                          '**type**': list
+                                      '**type**': dict
+                                  - - '**data**': co_nlocals
+                                      '**type**': str
+                                    - '**data**':
+                                      - - '**data**': '**type**'
+                                          '**type**': str
+                                        - '**data**': int
+                                          '**type**': str
+                                      - - '**data**': '**data**'
+                                          '**type**': str
+                                        - '**data**': '2'
+                                          '**type**': str
+                                      '**type**': dict
+                                  - - '**data**': co_posonlyargcount
+                                      '**type**': str
+                                    - '**data**':
+                                      - - '**data**': '**type**'
+                                          '**type**': str
+                                        - '**data**': int
+                                          '**type**': str
+                                      - - '**data**': '**data**'
+                                          '**type**': str
+                                        - '**data**': '0'
+                                          '**type**': str
+                                      '**type**': dict
+                                  - - '**data**': co_stacksize
+                                      '**type**': str
+                                    - '**data**':
+                                      - - '**data**': '**type**'
+                                          '**type**': str
+                                        - '**data**': int
+                                          '**type**': str
+                                      - - '**data**': '**data**'
+                                          '**type**': str
+                                        - '**data**': '2'
+                                          '**type**': str
+                                      '**type**': dict
+                                  - - '**data**': co_varnames
+                                      '**type**': str
+                                    - '**data**':
+                                      - - '**data**': '**type**'
+                                          '**type**': str
+                                        - '**data**': tuple
+                                          '**type**': str
+                                      - - '**data**': '**data**'
+                                          '**type**': str
+                                        - '**data**':
+                                          - '**data**':
+                                            - - '**data**': '**type**'
+                                                '**type**': str
+                                              - '**data**': str
+                                                '**type**': str
+                                            - - '**data**': '**data**'
+                                                '**type**': str
+                                              - '**data**': self
+                                                '**type**': str
+                                            '**type**': dict
+                                          - '**data**':
+                                            - - '**data**': '**type**'
+                                                '**type**': str
+                                              - '**data**': str
+                                                '**type**': str
+                                            - - '**data**': '**data**'
+                                                '**type**': str
+                                              - '**data**': power
+                                                '**type**': str
+                                            '**type**': dict
+                                          '**type**': list
+                                      '**type**': dict
+                                  '**type**': dict
+                              '**type**': dict
+                          - - '**data**': __globals__
+                              '**type**': str
+                            - '**data**': []
+                              '**type**': dict
+                          - - '**data**': __defaults__
+                              '**type**': str
+                            - '**data**':
+                              - - '**data**': '**type**'
+                                  '**type**': str
+                                - '**data**': tuple
+                                  '**type**': str
+                              - - '**data**': '**data**'
+                                  '**type**': str
+                                - '**data**':
+                                  - '**data**':
+                                    - - '**data**': '**type**'
+                                        '**type**': str
+                                      - '**data**': int
+                                        '**type**': str
+                                    - - '**data**': '**data**'
+                                        '**type**': str
+                                      - '**data**': '5'
+                                        '**type**': str
+                                    '**type**': dict
+                                  '**type**': list
+                              '**type**': dict
+                          - - '**data**': __name__
+                              '**type**': str
+                            - '**data**':
+                              - - '**data**': '**type**'
+                                  '**type**': str
+                                - '**data**': str
+                                  '**type**': str
+                              - - '**data**': '**data**'
+                                  '**type**': str
+                                - '**data**': __init__
+                                  '**type**': str
+                              '**type**': dict
+                          '**type**': dict
+                      '**type**': dict
+                    '**type**': list
+                  - '**data**':
+                    - '**data**':
+                      - - '**data**': '**type**'
+                          '**type**': str
+                        - '**data**': str
+                          '**type**': str
+                      - - '**data**': '**data**'
+                          '**type**': str
+                        - '**data**': get_power
+                          '**type**': str
+                      '**type**': dict
+                    - '**data**':
+                      - - '**data**': '**type**'
+                          '**type**': str
+                        - '**data**': function
+                          '**type**': str
+                      - - '**data**': '**data**'
+                          '**type**': str
+                        - '**data**':
+                          - - '**data**': __closure__
+                              '**type**': str
+                            - '**data**':
+                              - - '**data**': '**type**'
+                                  '**type**': str
+                                - '**data**': NoneType
+                                  '**type**': str
+                              - - '**data**': '**data**'
+                                  '**type**': str
+                                - '**data**': None
+                                  '**type**': str
+                              '**type**': dict
+                          - - '**data**': __code__
+                              '**type**': str
+                            - '**data**':
+                              - - '**data**': '**type**'
+                                  '**type**': str
+                                - '**data**': code
+                                  '**type**': str
+                              - - '**data**': '**data**'
+                                  '**type**': str
+                                - '**data**':
+                                  - - '**data**': __doc__
+                                      '**type**': str
+                                    - '**data**':
+                                      - - '**data**': '**type**'
+                                          '**type**': str
+                                        - '**data**': str
+                                          '**type**': str
+                                      - - '**data**': '**data**'
+                                          '**type**': str
+                                        - '**data**': Create a code object.  Not for
+                                            the faint of heart.
+                                          '**type**': str
+                                      '**type**': dict
+                                  - - '**data**': co_argcount
+                                      '**type**': str
+                                    - '**data**':
+                                      - - '**data**': '**type**'
+                                          '**type**': str
+                                        - '**data**': int
+                                          '**type**': str
+                                      - - '**data**': '**data**'
+                                          '**type**': str
+                                        - '**data**': '1'
+                                          '**type**': str
+                                      '**type**': dict
+                                  - - '**data**': co_cellvars
+                                      '**type**': str
+                                    - '**data**':
+                                      - - '**data**': '**type**'
+                                          '**type**': str
+                                        - '**data**': tuple
+                                          '**type**': str
+                                      - - '**data**': '**data**'
+                                          '**type**': str
+                                        - '**data**': []
+                                          '**type**': list
+                                      '**type**': dict
+                                  - - '**data**': co_code
+                                      '**type**': str
+                                    - '**data**':
+                                      - - '**data**': '**type**'
+                                          '**type**': str
+                                        - '**data**': bytes
+                                          '**type**': str
+                                      - - '**data**': '**data**'
+                                          '**type**': str
+                                        - '**data**':
+                                          - '**data**':
+                                            - - '**data**': '**type**'
+                                                '**type**': str
+                                              - '**data**': int
+                                                '**type**': str
+                                            - - '**data**': '**data**'
+                                                '**type**': str
+                                              - '**data**': '124'
+                                                '**type**': str
+                                            '**type**': dict
+                                          - '**data**':
+                                            - - '**data**': '**type**'
+                                                '**type**': str
+                                              - '**data**': int
+                                                '**type**': str
+                                            - - '**data**': '**data**'
+                                                '**type**': str
+                                              - '**data**': '0'
+                                                '**type**': str
+                                            '**type**': dict
+                                          - '**data**':
+                                            - - '**data**': '**type**'
+                                                '**type**': str
+                                              - '**data**': int
+                                                '**type**': str
+                                            - - '**data**': '**data**'
+                                                '**type**': str
+                                              - '**data**': '106'
+                                                '**type**': str
+                                            '**type**': dict
+                                          - '**data**':
+                                            - - '**data**': '**type**'
+                                                '**type**': str
+                                              - '**data**': int
+                                                '**type**': str
+                                            - - '**data**': '**data**'
+                                                '**type**': str
+                                              - '**data**': '0'
+                                                '**type**': str
+                                            '**type**': dict
+                                          - '**data**':
+                                            - - '**data**': '**type**'
+                                                '**type**': str
+                                              - '**data**': int
+                                                '**type**': str
+                                            - - '**data**': '**data**'
+                                                '**type**': str
+                                              - '**data**': '83'
+                                                '**type**': str
+                                            '**type**': dict
+                                          - '**data**':
+                                            - - '**data**': '**type**'
+                                                '**type**': str
+                                              - '**data**': int
+                                                '**type**': str
+                                            - - '**data**': '**data**'
+                                                '**type**': str
+                                              - '**data**': '0'
+                                                '**type**': str
+                                            '**type**': dict
+                                          '**type**': list
+                                      '**type**': dict
+                                  - - '**data**': co_consts
+                                      '**type**': str
+                                    - '**data**':
+                                      - - '**data**': '**type**'
+                                          '**type**': str
+                                        - '**data**': tuple
+                                          '**type**': str
+                                      - - '**data**': '**data**'
+                                          '**type**': str
+                                        - '**data**':
+                                          - '**data**':
+                                            - - '**data**': '**type**'
+                                                '**type**': str
+                                              - '**data**': NoneType
+                                                '**type**': str
+                                            - - '**data**': '**data**'
+                                                '**type**': str
+                                              - '**data**': None
+                                                '**type**': str
+                                            '**type**': dict
+                                          '**type**': list
+                                      '**type**': dict
+                                  - - '**data**': co_filename
+                                      '**type**': str
+                                    - '**data**':
+                                      - - '**data**': '**type**'
+                                          '**type**': str
+                                        - '**data**': str
+                                          '**type**': str
+                                      - - '**data**': '**data**'
+                                          '**type**': str
+                                        - '**data**': /home/bubuntu/Labs/ISP/Lab2/tests/data_for_test.py
+                                          '**type**': str
+                                      '**type**': dict
+                                  - - '**data**': co_firstlineno
+                                      '**type**': str
+                                    - '**data**':
+                                      - - '**data**': '**type**'
+                                          '**type**': str
+                                        - '**data**': int
+                                          '**type**': str
+                                      - - '**data**': '**data**'
+                                          '**type**': str
+                                        - '**data**': '26'
+                                          '**type**': str
+                                      '**type**': dict
+                                  - - '**data**': co_flags
+                                      '**type**': str
+                                    - '**data**':
+                                      - - '**data**': '**type**'
+                                          '**type**': str
+                                        - '**data**': int
+                                          '**type**': str
+                                      - - '**data**': '**data**'
+                                          '**type**': str
+                                        - '**data**': '67'
+                                          '**type**': str
+                                      '**type**': dict
+                                  - - '**data**': co_freevars
+                                      '**type**': str
+                                    - '**data**':
+                                      - - '**data**': '**type**'
+                                          '**type**': str
+                                        - '**data**': tuple
+                                          '**type**': str
+                                      - - '**data**': '**data**'
+                                          '**type**': str
+                                        - '**data**': []
+                                          '**type**': list
+                                      '**type**': dict
+                                  - - '**data**': co_kwonlyargcount
+                                      '**type**': str
+                                    - '**data**':
+                                      - - '**data**': '**type**'
+                                          '**type**': str
+                                        - '**data**': int
+                                          '**type**': str
+                                      - - '**data**': '**data**'
+                                          '**type**': str
+                                        - '**data**': '0'
+                                          '**type**': str
+                                      '**type**': dict
+                                  - - '**data**': co_linetable
+                                      '**type**': str
+                                    - '**data**':
+                                      - - '**data**': '**type**'
+                                          '**type**': str
+                                        - '**data**': bytes
+                                          '**type**': str
+                                      - - '**data**': '**data**'
+                                          '**type**': str
+                                        - '**data**':
+                                          - '**data**':
+                                            - - '**data**': '**type**'
+                                                '**type**': str
+                                              - '**data**': int
+                                                '**type**': str
+                                            - - '**data**': '**data**'
+                                                '**type**': str
+                                              - '**data**': '0'
+                                                '**type**': str
+                                            '**type**': dict
+                                          - '**data**':
+                                            - - '**data**': '**type**'
+                                                '**type**': str
+                                              - '**data**': int
+                                                '**type**': str
+                                            - - '**data**': '**data**'
+                                                '**type**': str
+                                              - '**data**': '1'
+                                                '**type**': str
+                                            '**type**': dict
+                                          '**type**': list
+                                      '**type**': dict
+                                  - - '**data**': co_lnotab
+                                      '**type**': str
+                                    - '**data**':
+                                      - - '**data**': '**type**'
+                                          '**type**': str
+                                        - '**data**': bytes
+                                          '**type**': str
+                                      - - '**data**': '**data**'
+                                          '**type**': str
+                                        - '**data**':
+                                          - '**data**':
+                                            - - '**data**': '**type**'
+                                                '**type**': str
+                                              - '**data**': int
+                                                '**type**': str
+                                            - - '**data**': '**data**'
+                                                '**type**': str
+                                              - '**data**': '0'
+                                                '**type**': str
+                                            '**type**': dict
+                                          - '**data**':
+                                            - - '**data**': '**type**'
+                                                '**type**': str
+                                              - '**data**': int
+                                                '**type**': str
+                                            - - '**data**': '**data**'
+                                                '**type**': str
+                                              - '**data**': '142'
+                                                '**type**': str
+                                            '**type**': dict
+                                          '**type**': list
+                                      '**type**': dict
+                                  - - '**data**': co_name
+                                      '**type**': str
+                                    - '**data**':
+                                      - - '**data**': '**type**'
+                                          '**type**': str
+                                        - '**data**': str
+                                          '**type**': str
+                                      - - '**data**': '**data**'
+                                          '**type**': str
+                                        - '**data**': get_power
+                                          '**type**': str
+                                      '**type**': dict
+                                  - - '**data**': co_names
+                                      '**type**': str
+                                    - '**data**':
+                                      - - '**data**': '**type**'
+                                          '**type**': str
+                                        - '**data**': tuple
+                                          '**type**': str
+                                      - - '**data**': '**data**'
+                                          '**type**': str
+                                        - '**data**':
+                                          - '**data**':
+                                            - - '**data**': '**type**'
+                                                '**type**': str
+                                              - '**data**': str
+                                                '**type**': str
+                                            - - '**data**': '**data**'
+                                                '**type**': str
+                                              - '**data**': power
+                                                '**type**': str
+                                            '**type**': dict
+                                          '**type**': list
+                                      '**type**': dict
+                                  - - '**data**': co_nlocals
+                                      '**type**': str
+                                    - '**data**':
+                                      - - '**data**': '**type**'
+                                          '**type**': str
+                                        - '**data**': int
+                                          '**type**': str
+                                      - - '**data**': '**data**'
+                                          '**type**': str
+                                        - '**data**': '1'
+                                          '**type**': str
+                                      '**type**': dict
+                                  - - '**data**': co_posonlyargcount
+                                      '**type**': str
+                                    - '**data**':
+                                      - - '**data**': '**type**'
+                                          '**type**': str
+                                        - '**data**': int
+                                          '**type**': str
+                                      - - '**data**': '**data**'
+                                          '**type**': str
+                                        - '**data**': '0'
+                                          '**type**': str
+                                      '**type**': dict
+                                  - - '**data**': co_stacksize
+                                      '**type**': str
+                                    - '**data**':
+                                      - - '**data**': '**type**'
+                                          '**type**': str
+                                        - '**data**': int
+                                          '**type**': str
+                                      - - '**data**': '**data**'
+                                          '**type**': str
+                                        - '**data**': '1'
+                                          '**type**': str
+                                      '**type**': dict
+                                  - - '**data**': co_varnames
+                                      '**type**': str
+                                    - '**data**':
+                                      - - '**data**': '**type**'
+                                          '**type**': str
+                                        - '**data**': tuple
+                                          '**type**': str
+                                      - - '**data**': '**data**'
+                                          '**type**': str
+                                        - '**data**':
+                                          - '**data**':
+                                            - - '**data**': '**type**'
+                                                '**type**': str
+                                              - '**data**': str
+                                                '**type**': str
+                                            - - '**data**': '**data**'
+                                                '**type**': str
+                                              - '**data**': self
+                                                '**type**': str
+                                            '**type**': dict
+                                          '**type**': list
+                                      '**type**': dict
+                                  '**type**': dict
+                              '**type**': dict
+                          - - '**data**': __globals__
+                              '**type**': str
+                            - '**data**': []
+                              '**type**': dict
+                          - - '**data**': __defaults__
+                              '**type**': str
+                            - '**data**':
+                              - - '**data**': '**type**'
+                                  '**type**': str
+                                - '**data**': NoneType
+                                  '**type**': str
+                              - - '**data**': '**data**'
+                                  '**type**': str
+                                - '**data**': None
+                                  '**type**': str
+                              '**type**': dict
+                          - - '**data**': __name__
+                              '**type**': str
+                            - '**data**':
+                              - - '**data**': '**type**'
+                                  '**type**': str
+                                - '**data**': str
+                                  '**type**': str
+                              - - '**data**': '**data**'
+                                  '**type**': str
+                                - '**data**': get_power
+                                  '**type**': str
+                              '**type**': dict
+                          '**type**': dict
+                      '**type**': dict
+                    '**type**': list
+                  - '**data**':
+                    - '**data**':
+                      - - '**data**': '**type**'
+                          '**type**': str
+                        - '**data**': str
+                          '**type**': str
+                      - - '**data**': '**data**'
+                          '**type**': str
+                        - '**data**': __dict__
+                          '**type**': str
+                      '**type**': dict
+                    - '**data**':
+                      - - '**data**': '**type**'
+                          '**type**': str
+                        - '**data**': dict
+                          '**type**': str
+                      - - '**data**': '**data**'
+                          '**type**': str
+                        - '**data**':
+                          - '**data**':
+                            - '**data**':
+                              - - '**data**': '**type**'
+                                  '**type**': str
+                                - '**data**': str
+                                  '**type**': str
+                              - - '**data**': '**data**'
+                                  '**type**': str
+                                - '**data**': '**type**'
+                                  '**type**': str
+                              '**type**': dict
+                            - '**data**':
+                              - - '**data**': '**type**'
+                                  '**type**': str
+                                - '**data**': str
+                                  '**type**': str
+                              - - '**data**': '**data**'
+                                  '**type**': str
+                                - '**data**': getset_descriptor
+                                  '**type**': str
+                              '**type**': dict
+                            '**type**': list
+                          - '**data**':
+                            - '**data**':
+                              - - '**data**': '**type**'
+                                  '**type**': str
+                                - '**data**': str
+                                  '**type**': str
+                              - - '**data**': '**data**'
+                                  '**type**': str
+                                - '**data**': '**data**'
+                                  '**type**': str
+                              '**type**': dict
+                            - '**data**':
+                              - - '**data**': '**type**'
+                                  '**type**': str
+                                - '**data**': dict
+                                  '**type**': str
+                              - - '**data**': '**data**'
+                                  '**type**': str
+                                - '**data**':
+                                  - '**data**':
+                                    - '**data**':
+                                      - - '**data**': '**type**'
+                                          '**type**': str
+                                        - '**data**': str
+                                          '**type**': str
+                                      - - '**data**': '**data**'
+                                          '**type**': str
+                                        - '**data**': __doc__
+                                          '**type**': str
+                                      '**type**': dict
+                                    - '**data**':
+                                      - - '**data**': '**type**'
+                                          '**type**': str
+                                        - '**data**': str
+                                          '**type**': str
+                                      - - '**data**': '**data**'
+                                          '**type**': str
+                                        - '**data**': dictionary for instance variables
+                                            (if defined)
+                                          '**type**': str
+                                      '**type**': dict
+                                    '**type**': list
+                                  - '**data**':
+                                    - '**data**':
+                                      - - '**data**': '**type**'
+                                          '**type**': str
+                                        - '**data**': str
+                                          '**type**': str
+                                      - - '**data**': '**data**'
+                                          '**type**': str
+                                        - '**data**': __name__
+                                          '**type**': str
+                                      '**type**': dict
+                                    - '**data**':
+                                      - - '**data**': '**type**'
+                                          '**type**': str
+                                        - '**data**': str
+                                          '**type**': str
+                                      - - '**data**': '**data**'
+                                          '**type**': str
+                                        - '**data**': __dict__
+                                          '**type**': str
+                                      '**type**': dict
+                                    '**type**': list
+                                  - '**data**':
+                                    - '**data**':
+                                      - - '**data**': '**type**'
+                                          '**type**': str
+                                        - '**data**': str
+                                          '**type**': str
+                                      - - '**data**': '**data**'
+                                          '**type**': str
+                                        - '**data**': __qualname__
+                                          '**type**': str
+                                      '**type**': dict
+                                    - '**data**':
+                                      - - '**data**': '**type**'
+                                          '**type**': str
+                                        - '**data**': str
+                                          '**type**': str
+                                      - - '**data**': '**data**'
+                                          '**type**': str
+                                        - '**data**': Person.__dict__
+                                          '**type**': str
+                                      '**type**': dict
+                                    '**type**': list
+                                  '**type**': list
+                              '**type**': dict
+                            '**type**': list
+                          '**type**': list
+                      '**type**': dict
+                    '**type**': list
+                  - '**data**':
+                    - '**data**':
+                      - - '**data**': '**type**'
+                          '**type**': str
+                        - '**data**': str
+                          '**type**': str
+                      - - '**data**': '**data**'
+                          '**type**': str
+                        - '**data**': __weakref__
+                          '**type**': str
+                      '**type**': dict
+                    - '**data**':
+                      - - '**data**': '**type**'
+                          '**type**': str
+                        - '**data**': dict
+                          '**type**': str
+                      - - '**data**': '**data**'
+                          '**type**': str
+                        - '**data**':
+                          - '**data**':
+                            - '**data**':
+                              - - '**data**': '**type**'
+                                  '**type**': str
+                                - '**data**': str
+                                  '**type**': str
+                              - - '**data**': '**data**'
+                                  '**type**': str
+                                - '**data**': '**type**'
+                                  '**type**': str
+                              '**type**': dict
+                            - '**data**':
+                              - - '**data**': '**type**'
+                                  '**type**': str
+                                - '**data**': str
+                                  '**type**': str
+                              - - '**data**': '**data**'
+                                  '**type**': str
+                                - '**data**': getset_descriptor
+                                  '**type**': str
+                              '**type**': dict
+                            '**type**': list
+                          - '**data**':
+                            - '**data**':
+                              - - '**data**': '**type**'
+                                  '**type**': str
+                                - '**data**': str
+                                  '**type**': str
+                              - - '**data**': '**data**'
+                                  '**type**': str
+                                - '**data**': '**data**'
+                                  '**type**': str
+                              '**type**': dict
+                            - '**data**':
+                              - - '**data**': '**type**'
+                                  '**type**': str
+                                - '**data**': dict
+                                  '**type**': str
+                              - - '**data**': '**data**'
+                                  '**type**': str
+                                - '**data**':
+                                  - '**data**':
+                                    - '**data**':
+                                      - - '**data**': '**type**'
+                                          '**type**': str
+                                        - '**data**': str
+                                          '**type**': str
+                                      - - '**data**': '**data**'
+                                          '**type**': str
+                                        - '**data**': __doc__
+                                          '**type**': str
+                                      '**type**': dict
+                                    - '**data**':
+                                      - - '**data**': '**type**'
+                                          '**type**': str
+                                        - '**data**': str
+                                          '**type**': str
+                                      - - '**data**': '**data**'
+                                          '**type**': str
+                                        - '**data**': list of weak references to the
+                                            object (if defined)
+                                          '**type**': str
+                                      '**type**': dict
+                                    '**type**': list
+                                  - '**data**':
+                                    - '**data**':
+                                      - - '**data**': '**type**'
+                                          '**type**': str
+                                        - '**data**': str
+                                          '**type**': str
+                                      - - '**data**': '**data**'
+                                          '**type**': str
+                                        - '**data**': __name__
+                                          '**type**': str
+                                      '**type**': dict
+                                    - '**data**':
+                                      - - '**data**': '**type**'
+                                          '**type**': str
+                                        - '**data**': str
+                                          '**type**': str
+                                      - - '**data**': '**data**'
+                                          '**type**': str
+                                        - '**data**': __weakref__
+                                          '**type**': str
+                                      '**type**': dict
+                                    '**type**': list
+                                  - '**data**':
+                                    - '**data**':
+                                      - - '**data**': '**type**'
+                                          '**type**': str
+                                        - '**data**': str
+                                          '**type**': str
+                                      - - '**data**': '**data**'
+                                          '**type**': str
+                                        - '**data**': __qualname__
+                                          '**type**': str
+                                      '**type**': dict
+                                    - '**data**':
+                                      - - '**data**': '**type**'
+                                          '**type**': str
+                                        - '**data**': str
+                                          '**type**': str
+                                      - - '**data**': '**data**'
+                                          '**type**': str
+                                        - '**data**': Person.__weakref__
+                                          '**type**': str
+                                      '**type**': dict
+                                    '**type**': list
+                                  '**type**': list
+                              '**type**': dict
+                            '**type**': list
+                          '**type**': list
+                      '**type**': dict
+                    '**type**': list
+                  - '**data**':
+                    - '**data**':
+                      - - '**data**': '**type**'
+                          '**type**': str
+                        - '**data**': str
+                          '**type**': str
+                      - - '**data**': '**data**'
+                          '**type**': str
+                        - '**data**': __doc__
+                          '**type**': str
+                      '**type**': dict
+                    - '**data**':
+                      - - '**data**': '**type**'
+                          '**type**': str
+                        - '**data**': NoneType
+                          '**type**': str
+                      - - '**data**': '**data**'
+                          '**type**': str
+                        - '**data**': None
+                          '**type**': str
+                      '**type**': dict
+                    '**type**': list
+                  '**type**': list
+              '**type**': dict
+          '**type**': dict
+      '**type**': dict
+    '**type**': tuple
+  '**name**':
+    '**data**': Biba
+    '**type**': str
+'**type**': class

@@ -68,12 +68,12 @@ def serialize_function(obj):
 
 def serialize_class(obj):
     if obj.__name__ == "object":
-        return
+        return "obj"
     data = {"**name**": serialize(obj.__name__)}
     hierarchy = ()
     for o in obj.__bases__:
-        base_class = serialize_class(o)
-        if base_class is not None:
+        base_class = serialize(o)
+        if base_class["**data**"] != "obj":
             hierarchy += (base_class,)
 
     data["**hierarchy**"] = serialize(hierarchy)
@@ -109,6 +109,7 @@ def deserialize(obj):
         obj_type_name = "special_dict"
     else:
         return obj
+
     match obj_type_name:
         case "int" | "float" | "bool" | "complex" | "str" | "NoneType":
             return get_primitive(obj[lib.lib_constants.DATA], obj_type_name)
@@ -165,8 +166,11 @@ def deserialize_function(obj):
 
 def deserialize_class(obj):
     name = deserialize(obj["**name**"])
-    hierarchy = deserialize(obj["**hierarchy**"])
+    hierarchy_in_tuple = deserialize(obj["**hierarchy**"])
     dictionary = deserialize(obj["**dict**"])
+    hierarchy = ()
+    for cls in hierarchy_in_tuple:
+        hierarchy += (deserialize(cls), )
 
     return type(name, hierarchy, dictionary)
 

@@ -1,4 +1,4 @@
-from lib.parsers.toml_parser import to_toml, from_toml
+from lib.parsers.toml_parser import convert_to_toml, convert_from_toml
 from lib.serialization.custom_serialization import serialize, deserialize
 
 
@@ -15,10 +15,10 @@ class TomlSerializer:
 
     @staticmethod
     def dumps(obj):
-        return to_toml(serialize(obj))
+        return convert_to_toml(serialize(obj))
 
     @staticmethod
     def loads(string):
-        return deserialize(from_toml(string))
+        return deserialize(convert_from_toml(string))
 
 

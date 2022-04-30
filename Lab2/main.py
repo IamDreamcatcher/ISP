@@ -1,61 +1,56 @@
-import inspect
-import math
-import json
-import tomli
-import tomli_w
-import yaml
+import argparse
+import configparser
+import sys
 
-from abc import ABC
-
-from yaml import UnsafeLoader
-
-import lib.lib_constants
-from lib.parsers.json_parser import to_json, from_json
-from lib.parsers.toml_parser import to_toml, from_toml
-from lib.parsers.yaml_parser import to_yaml, from_yaml
-from lib.serialization.custom_serialization import serialize, deserialize
-from math import sin
+from lib.factory.create_serializer import create_serializer
 
 
-class F:
-    pass
+def get_args():
+    my_args_parser = argparse.ArgumentParser(description="Custom serializer")
+    my_args_parser.add_argument("-config", dest="config_file", type=str, help="Your config")
+    my_args_parser.add_argument("-in_file", dest="in_file", type=str, help="Input file")
+    my_args_parser.add_argument("-out_file", dest="out_file", type=str, help="Output file")
+    my_args_parser.add_argument("-in_type", dest="in_type", type=str, help="Input format type")
+    my_args_parser.add_argument("-out_type", dest="out_type", type=str, help="Output format type")
+
+    return my_args_parser.parse_args()
 
 
-def test_fact(n):
-    if n == 0:
-        return 1
+def convert(in_file, out_file, in_type, out_type):
+    in_serializer = create_serializer(in_type)
+    out_serializer = create_serializer(out_type)
+
+    data = in_serializer.load(in_file)
+    out_serializer.dump(data, out_file)
+
+
+def main():
+    args = get_args()
+    in_file = ""
+    out_file = ""
+    in_type = ""
+    out_type = ""
+
+    if args.config_file is not None:
+        config = configparser.ConfigParser()
+        config.read(args.config_file)
+
+        in_file = str(config["DEFAULT"]["in_file"])
+        out_file = str(config["DEFAULT"]["out_file"])
+        in_type = str(config["DEFAULT"]["in_type"])
+        out_type = str(config["DEFAULT"]["out_type"])
     else:
-        return n * test_fact(n - 1)
+        in_file = args.in_file
+        out_file = args.out_file
+        in_type = args.in_type
+        out_type = args.out_type
 
-
-glob = 5
-
-
-def lol(n):
-    return test_fact(n) * glob
-
-
-c = 3
-
-
-def sinx(x, y):
-    return math.sin(x * y + c)
-
-
-class A:
-    aba = "kek"
-
-    def kik(self):
-        print("Make AGA")
-
-
-class B:
-    lol = math.sin(1)
-
-
-def out():
-    print(tomli_w.dumps(serialize({0:   1})))
+    if in_file == "" or out_file == "" or in_type == "" or out_type == "" or in_type == out_type:
+        print("Input format = output format or one of args is missing")
+        sys.exit()
+    else:
+        convert(in_file, out_file, in_type, out_type)
 
 
 if __name__ == '__main__':
-    out()
+    main()

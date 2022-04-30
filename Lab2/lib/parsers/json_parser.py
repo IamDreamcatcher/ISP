@@ -1,4 +1,4 @@
-def to_json(obj: object):
+def convert_to_json(obj: object):
     dictionary_string = str(obj)
     json_string = ""
     size = len(dictionary_string)
@@ -15,7 +15,7 @@ def to_json(obj: object):
     return json_string
 
 
-def from_json(json_string, left, right):
+def convert_from_json(json_string, left, right):
     if json_string[left] == '[':
         balance = 1
         data = []
@@ -36,7 +36,7 @@ def from_json(json_string, left, right):
                 el_balance -= 1
 
             if el_balance == 0 and prev_left < i:
-                data.append(from_json(json_string, prev_left, i + 1))
+                data.append(convert_from_json(json_string, prev_left, i + 1))
                 prev_left = i + 3
 
             if balance == 0:
@@ -65,8 +65,8 @@ def from_json(json_string, left, right):
                 value_board = i
 
             if el_balance == 0 and value_board != -1 and (json_string[i + 1] == ',' or json_string[i + 1] == '}'):
-                key = from_json(json_string, key_board, value_board - 1)
-                value = from_json(json_string, value_board + 2, i)
+                key = convert_from_json(json_string, key_board, value_board - 1)
+                value = convert_from_json(json_string, value_board + 2, i)
 
                 if isinstance(key, str):
                     key = key[1: -1]

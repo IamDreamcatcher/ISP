@@ -1,4 +1,4 @@
-from lib.parsers.yaml_parser import to_yaml, from_yaml
+from lib.parsers.yaml_parser import convert_to_yaml, convert_from_yaml
 from lib.serialization.custom_serialization import serialize, deserialize
 
 
@@ -11,14 +11,14 @@ class YamlSerializer:
     @staticmethod
     def load(file_path):
         with open(file_path, 'r') as file:
-            return YamlSerializer.loads(file_path.read())
+            return YamlSerializer.loads(file.read())
 
     @staticmethod
     def dumps(obj):
-        return to_yaml(serialize(obj))
+        return convert_to_yaml(serialize(obj))
 
     @staticmethod
     def loads(string):
-        return deserialize(from_yaml(string))
+        return deserialize(convert_from_yaml(string))
 
 
