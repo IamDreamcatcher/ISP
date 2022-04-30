@@ -2,7 +2,7 @@ from lib.factory.create_serializer import create_serializer
 from lib.serialization.custom_serialization import serialize
 from tests.data_for_test import *
 
-JSON_PATH = "files/my_json.json"
+JSON_PATH = "tests/files/my_json.json"
 TOML_PATH = "files/my_toml.toml"
 YAML_PATH = "files/my_yaml.yaml"
 # pytest -rp
