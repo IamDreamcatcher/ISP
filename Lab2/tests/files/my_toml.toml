@@ -1,0 +1,114 @@
+"**type**" = "function"
+
+["**data**".__closure__]
+"**type**" = "NoneType"
+"**data**" = "None"
+
+["**data**".__code__]
+"**type**" = "code"
+
+["**data**".__code__."**data**".__doc__]
+"**type**" = "str"
+"**data**" = "Create a code object.  Not for the faint of heart."
+
+["**data**".__code__."**data**".co_argcount]
+"**type**" = "int"
+"**data**" = "2"
+
+["**data**".__code__."**data**".co_cellvars]
+"**type**" = "tuple"
+"**data**" = []
+
+["**data**".__code__."**data**".co_code]
+"**type**" = "bytes"
+"**data**" = [
+    { "**type**" = "int", "**data**" = "116" },
+    { "**type**" = "int", "**data**" = "0" },
+    { "**type**" = "int", "**data**" = "124" },
+    { "**type**" = "int", "**data**" = "0" },
+    { "**type**" = "int", "**data**" = "124" },
+    { "**type**" = "int", "**data**" = "1" },
+    { "**type**" = "int", "**data**" = "131" },
+    { "**type**" = "int", "**data**" = "2" },
+    { "**type**" = "int", "**data**" = "83" },
+    { "**type**" = "int", "**data**" = "0" },
+]
+
+["**data**".__code__."**data**".co_consts]
+"**type**" = "tuple"
+"**data**" = [
+    { "**type**" = "NoneType", "**data**" = "None" },
+]
+
+["**data**".__code__."**data**".co_filename]
+"**type**" = "str"
+"**data**" = "/home/bubuntu/Labs/ISP/Lab2/tests/data_for_test.py"
+
+["**data**".__code__."**data**".co_firstlineno]
+"**type**" = "int"
+"**data**" = "12"
+
+["**data**".__code__."**data**".co_flags]
+"**type**" = "int"
+"**data**" = "67"
+
+["**data**".__code__."**data**".co_freevars]
+"**type**" = "tuple"
+"**data**" = []
+
+["**data**".__code__."**data**".co_kwonlyargcount]
+"**type**" = "int"
+"**data**" = "0"
+
+["**data**".__code__."**data**".co_linetable]
+"**type**" = "bytes"
+"**data**" = [
+    { "**type**" = "int", "**data**" = "10" },
+    { "**type**" = "int", "**data**" = "1" },
+]
+
+["**data**".__code__."**data**".co_lnotab]
+"**type**" = "bytes"
+"**data**" = [
+    { "**type**" = "int", "**data**" = "0" },
+    { "**type**" = "int", "**data**" = "1" },
+]
+
+["**data**".__code__."**data**".co_name]
+"**type**" = "str"
+"**data**" = "custom_pow"
+
+["**data**".__code__."**data**".co_names]
+"**type**" = "tuple"
+"**data**" = [
+    { "**type**" = "str", "**data**" = "pow" },
+]
+
+["**data**".__code__."**data**".co_nlocals]
+"**type**" = "int"
+"**data**" = "2"
+
+["**data**".__code__."**data**".co_posonlyargcount]
+"**type**" = "int"
+"**data**" = "0"
+
+["**data**".__code__."**data**".co_stacksize]
+"**type**" = "int"
+"**data**" = "3"
+
+["**data**".__code__."**data**".co_varnames]
+"**type**" = "tuple"
+"**data**" = [
+    { "**type**" = "str", "**data**" = "n" },
+    { "**type**" = "str", "**data**" = "step" },
+]
+
+["**data**".__globals__]
+
+["**data**".__defaults__]
+"**type**" = "NoneType"
+"**data**" = "None"
+
+["**data**".__name__]
+"**type**" = "str"
+"**data**" = "custom_pow"

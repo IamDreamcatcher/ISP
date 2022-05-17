@@ -1,0 +1,1374 @@
+"**type**" = "class"
+
+["**data**"."**name**"]
+"**type**" = "str"
+"**data**" = "Biba"
+
+["**data**"."**hierarchy**"]
+"**type**" = "tuple"
+
+[["**data**"."**hierarchy**"."**data**"]]
+"**type**" = "dict"
+"**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "class" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**name**" },
+        { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "str" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "Person" },
+    ],
+] },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**hierarchy**" },
+        { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "tuple" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "list", "**data**" = [] },
+    ],
+] },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**dict**" },
+        { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "dict" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "list", "**data**" = [
+    { "**type**" = "list", "**data**" = [
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "str" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "__module__" },
+    ],
+] },
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "str" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "tests.data_for_test" },
+    ],
+] },
+] },
+    { "**type**" = "list", "**data**" = [
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "str" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "type" },
+    ],
+] },
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "str" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "Machine" },
+    ],
+] },
+] },
+    { "**type**" = "list", "**data**" = [
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "str" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "__init__" },
+    ],
+] },
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "function" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "__closure__" },
+        { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "NoneType" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "None" },
+    ],
+] },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "__code__" },
+        { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "code" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "__doc__" },
+        { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "str" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "Create a code object.  Not for the faint of heart." },
+    ],
+] },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "co_argcount" },
+        { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "int" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "2" },
+    ],
+] },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "co_cellvars" },
+        { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "tuple" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "list", "**data**" = [] },
+    ],
+] },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "co_code" },
+        { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "bytes" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "list", "**data**" = [
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "int" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "124" },
+    ],
+] },
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "int" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "1" },
+    ],
+] },
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "int" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "124" },
+    ],
+] },
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "int" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "0" },
+    ],
+] },
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "int" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "95" },
+    ],
+] },
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "int" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "0" },
+    ],
+] },
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "int" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "100" },
+    ],
+] },
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "int" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "0" },
+    ],
+] },
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "int" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "83" },
+    ],
+] },
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "int" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "0" },
+    ],
+] },
+] },
+    ],
+] },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "co_consts" },
+        { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "tuple" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "list", "**data**" = [
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "NoneType" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "None" },
+    ],
+] },
+] },
+    ],
+] },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "co_filename" },
+        { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "str" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "/home/bubuntu/Labs/ISP/Lab2/tests/data_for_test.py" },
+    ],
+] },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "co_firstlineno" },
+        { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "int" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "23" },
+    ],
+] },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "co_flags" },
+        { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "int" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "67" },
+    ],
+] },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "co_freevars" },
+        { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "tuple" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "list", "**data**" = [] },
+    ],
+] },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "co_kwonlyargcount" },
+        { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "int" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "0" },
+    ],
+] },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "co_linetable" },
+        { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "bytes" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "list", "**data**" = [
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "int" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "0" },
+    ],
+] },
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "int" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "1" },
+    ],
+] },
+] },
+    ],
+] },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "co_lnotab" },
+        { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "bytes" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "list", "**data**" = [
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "int" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "0" },
+    ],
+] },
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "int" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "69" },
+    ],
+] },
+] },
+    ],
+] },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "co_name" },
+        { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "str" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "__init__" },
+    ],
+] },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "co_names" },
+        { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "tuple" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "list", "**data**" = [
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "str" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "power" },
+    ],
+] },
+] },
+    ],
+] },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "co_nlocals" },
+        { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "int" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "2" },
+    ],
+] },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "co_posonlyargcount" },
+        { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "int" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "0" },
+    ],
+] },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "co_stacksize" },
+        { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "int" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "2" },
+    ],
+] },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "co_varnames" },
+        { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "tuple" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "list", "**data**" = [
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "str" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "self" },
+    ],
+] },
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "str" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "power" },
+    ],
+] },
+] },
+    ],
+] },
+    ],
+] },
+    ],
+] },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "__globals__" },
+        { "**type**" = "dict", "**data**" = [] },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "__defaults__" },
+        { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "tuple" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "list", "**data**" = [
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "int" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "5" },
+    ],
+] },
+] },
+    ],
+] },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "__name__" },
+        { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "str" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "__init__" },
+    ],
+] },
+    ],
+] },
+    ],
+] },
+] },
+    { "**type**" = "list", "**data**" = [
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "str" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "get_power" },
+    ],
+] },
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "function" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "__closure__" },
+        { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "NoneType" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "None" },
+    ],
+] },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "__code__" },
+        { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "code" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "__doc__" },
+        { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "str" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "Create a code object.  Not for the faint of heart." },
+    ],
+] },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "co_argcount" },
+        { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "int" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "1" },
+    ],
+] },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "co_cellvars" },
+        { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "tuple" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "list", "**data**" = [] },
+    ],
+] },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "co_code" },
+        { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "bytes" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "list", "**data**" = [
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "int" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "124" },
+    ],
+] },
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "int" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "0" },
+    ],
+] },
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "int" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "106" },
+    ],
+] },
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "int" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "0" },
+    ],
+] },
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "int" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "83" },
+    ],
+] },
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "int" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "0" },
+    ],
+] },
+] },
+    ],
+] },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "co_consts" },
+        { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "tuple" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "list", "**data**" = [
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "NoneType" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "None" },
+    ],
+] },
+] },
+    ],
+] },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "co_filename" },
+        { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "str" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "/home/bubuntu/Labs/ISP/Lab2/tests/data_for_test.py" },
+    ],
+] },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "co_firstlineno" },
+        { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "int" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "26" },
+    ],
+] },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "co_flags" },
+        { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "int" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "67" },
+    ],
+] },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "co_freevars" },
+        { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "tuple" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "list", "**data**" = [] },
+    ],
+] },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "co_kwonlyargcount" },
+        { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "int" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "0" },
+    ],
+] },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "co_linetable" },
+        { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "bytes" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "list", "**data**" = [
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "int" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "0" },
+    ],
+] },
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "int" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "1" },
+    ],
+] },
+] },
+    ],
+] },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "co_lnotab" },
+        { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "bytes" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "list", "**data**" = [
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "int" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "0" },
+    ],
+] },
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "int" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "78" },
+    ],
+] },
+] },
+    ],
+] },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "co_name" },
+        { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "str" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "get_power" },
+    ],
+] },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "co_names" },
+        { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "tuple" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "list", "**data**" = [
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "str" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "power" },
+    ],
+] },
+] },
+    ],
+] },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "co_nlocals" },
+        { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "int" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "1" },
+    ],
+] },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "co_posonlyargcount" },
+        { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "int" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "0" },
+    ],
+] },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "co_stacksize" },
+        { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "int" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "1" },
+    ],
+] },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "co_varnames" },
+        { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "tuple" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "list", "**data**" = [
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "str" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "self" },
+    ],
+] },
+] },
+    ],
+] },
+    ],
+] },
+    ],
+] },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "__globals__" },
+        { "**type**" = "dict", "**data**" = [] },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "__defaults__" },
+        { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "NoneType" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "None" },
+    ],
+] },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "__name__" },
+        { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "str" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "get_power" },
+    ],
+] },
+    ],
+] },
+    ],
+] },
+] },
+    { "**type**" = "list", "**data**" = [
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "str" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "__dict__" },
+    ],
+] },
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "dict" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "list", "**data**" = [
+    { "**type**" = "list", "**data**" = [
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "str" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "**type**" },
+    ],
+] },
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "str" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "getset_descriptor" },
+    ],
+] },
+] },
+    { "**type**" = "list", "**data**" = [
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "str" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "**data**" },
+    ],
+] },
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "dict" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "list", "**data**" = [
+    { "**type**" = "list", "**data**" = [
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "str" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "__doc__" },
+    ],
+] },
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "str" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "dictionary for instance variables (if defined)" },
+    ],
+] },
+] },
+    { "**type**" = "list", "**data**" = [
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "str" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "__name__" },
+    ],
+] },
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "str" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "__dict__" },
+    ],
+] },
+] },
+    { "**type**" = "list", "**data**" = [
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "str" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "__qualname__" },
+    ],
+] },
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "str" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "Person.__dict__" },
+    ],
+] },
+] },
+] },
+    ],
+] },
+] },
+] },
+    ],
+] },
+] },
+    { "**type**" = "list", "**data**" = [
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "str" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "__weakref__" },
+    ],
+] },
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "dict" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "list", "**data**" = [
+    { "**type**" = "list", "**data**" = [
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "str" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "**type**" },
+    ],
+] },
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "str" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "getset_descriptor" },
+    ],
+] },
+] },
+    { "**type**" = "list", "**data**" = [
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "str" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "**data**" },
+    ],
+] },
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "dict" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "list", "**data**" = [
+    { "**type**" = "list", "**data**" = [
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "str" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "__doc__" },
+    ],
+] },
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "str" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "list of weak references to the object (if defined)" },
+    ],
+] },
+] },
+    { "**type**" = "list", "**data**" = [
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "str" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "__name__" },
+    ],
+] },
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "str" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "__weakref__" },
+    ],
+] },
+] },
+    { "**type**" = "list", "**data**" = [
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "str" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "__qualname__" },
+    ],
+] },
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "str" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "Person.__weakref__" },
+    ],
+] },
+] },
+] },
+    ],
+] },
+] },
+] },
+    ],
+] },
+] },
+    { "**type**" = "list", "**data**" = [
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "str" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "__doc__" },
+    ],
+] },
+    { "**type**" = "dict", "**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "**type**" },
+        { "**type**" = "str", "**data**" = "NoneType" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "**data**" },
+        { "**type**" = "str", "**data**" = "None" },
+    ],
+] },
+] },
+] },
+    ],
+] },
+    ],
+] },
+    ],
+]
+
+["**data**"."**dict**"]
+"**type**" = "dict"
+"**data**" = [
+    [
+        { "**type**" = "str", "**data**" = "__module__" },
+        { "**type**" = "str", "**data**" = "tests.data_for_test" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "state" },
+        { "**type**" = "str", "**data**" = "lox" },
+    ],
+    [
+        { "**type**" = "str", "**data**" = "__doc__" },
+        { "**type**" = "NoneType", "**data**" = "None" },
+    ],
+]

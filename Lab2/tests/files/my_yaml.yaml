@@ -1,0 +1,132 @@
+'**data**':
+  __closure__:
+    '**data**': None
+    '**type**': NoneType
+  __code__:
+    '**data**':
+      __doc__:
+        '**data**': Create a code object.  Not for the faint of heart.
+        '**type**': str
+      co_argcount:
+        '**data**': '2'
+        '**type**': int
+      co_cellvars:
+        '**data**': []
+        '**type**': tuple
+      co_code:
+        '**data**':
+        - '**data**': '116'
+          '**type**': int
+        - '**data**': '0'
+          '**type**': int
+        - '**data**': '160'
+          '**type**': int
+        - '**data**': '1'
+          '**type**': int
+        - '**data**': '124'
+          '**type**': int
+        - '**data**': '0'
+          '**type**': int
+        - '**data**': '124'
+          '**type**': int
+        - '**data**': '1'
+          '**type**': int
+        - '**data**': '20'
+          '**type**': int
+        - '**data**': '0'
+          '**type**': int
+        - '**data**': '116'
+          '**type**': int
+        - '**data**': '2'
+          '**type**': int
+        - '**data**': '20'
+          '**type**': int
+        - '**data**': '0'
+          '**type**': int
+        - '**data**': '161'
+          '**type**': int
+        - '**data**': '1'
+          '**type**': int
+        - '**data**': '83'
+          '**type**': int
+        - '**data**': '0'
+          '**type**': int
+        '**type**': bytes
+      co_consts:
+        '**data**':
+        - '**data**': None
+          '**type**': NoneType
+        '**type**': tuple
+      co_filename:
+        '**data**': /home/bubuntu/Labs/ISP/Lab2/tests/data_for_test.py
+        '**type**': str
+      co_firstlineno:
+        '**data**': '16'
+        '**type**': int
+      co_flags:
+        '**data**': '67'
+        '**type**': int
+      co_freevars:
+        '**data**': []
+        '**type**': tuple
+      co_kwonlyargcount:
+        '**data**': '0'
+        '**type**': int
+      co_linetable:
+        '**data**':
+        - '**data**': '18'
+          '**type**': int
+        - '**data**': '1'
+          '**type**': int
+        '**type**': bytes
+      co_lnotab:
+        '**data**':
+        - '**data**': '0'
+          '**type**': int
+        - '**data**': '1'
+          '**type**': int
+        '**type**': bytes
+      co_name:
+        '**data**': func_with_module
+        '**type**': str
+      co_names:
+        '**data**':
+        - '**data**': math
+          '**type**': str
+        - '**data**': sin
+          '**type**': str
+        - '**data**': global_x
+          '**type**': str
+        '**type**': tuple
+      co_nlocals:
+        '**data**': '2'
+        '**type**': int
+      co_posonlyargcount:
+        '**data**': '0'
+        '**type**': int
+      co_stacksize:
+        '**data**': '4'
+        '**type**': int
+      co_varnames:
+        '**data**':
+        - '**data**': x
+          '**type**': str
+        - '**data**': y
+          '**type**': str
+        '**type**': tuple
+    '**type**': code
+  __defaults__:
+    '**data**': None
+    '**type**': NoneType
+  __globals__:
+    global_x:
+      '**data**': '21'
+      '**type**': int
+    math:
+      '**data**':
+        module: math
+      '**type**': module
+  __name__:
+    '**data**': func_with_module
+    '**type**': str
+'**type**': function
