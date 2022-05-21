@@ -1,0 +1,41 @@
+{% extends "base/base.html" %}
+
+{% block content %}
+
+    <table class="table w-50 mx-auto">
+        <thead>
+        <tr>
+            <th scope="col" class="text-center"> Info</th>
+            <th scope="col" class="text-center"></th>
+        </tr>
+        </thead>
+        <tbody class="table_borders">
+        <tr>
+            <td class="text-center"><span> Name </span></td>
+            <td class="text-center"><span> {{ product.name }} </span></td>
+        </tr>
+        <tr>
+            <td class="text-center"><span> Cost </span></td>
+            <td class="text-center"><span> {{ product.cost }} </span></td>
+        </tr>
+        <tr>
+            <td class="text-center"><span> About </span></td>
+            <td class="text-center"><span> {{ product.content}} </span></td>
+        </tr>
+        <tr>
+            <td class="text-center"><span> Category </span></td>
+            <td class="text-center"><span> {{ product.category.name}} </span></td>
+        </tr>
+        <tr>
+            <td class="text-center"><span> Photo </span></td>
+            <td class="text-center"><p> <img src={{ product.photo.url }} ></p></td>
+        </tr>
+    </table>
+    {% if user.is_authenticated %}
+        <form action="#" method="post">
+            {% csrf_token %}
+            {{ cart_product_form }}
+            <input type="submit" value="Add to cart">
+        </form>
+    {% endif %}
+{% endblock %}

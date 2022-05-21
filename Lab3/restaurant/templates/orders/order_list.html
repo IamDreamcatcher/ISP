@@ -1,0 +1,30 @@
+{% extends "base/base.html" %}
+{% block navbarcontent %}
+    <li class="nav-item">
+        <a class="nav-link" href="#">Clear cart</a>
+    </li>
+{% endblock %}
+
+{% block content %}
+     <table class="table w-50 mx-auto">
+        <thead>
+        <tr>
+            <th scope="col" class="text-center">Id</th>
+            <th scope="col" class="text-center">Product</th>
+            <th scope="col" class="text-center">Amount</th>
+            <th scope="col" class="text-center">Cost</th>
+        </tr>
+        </thead>
+        <tbody class="table_borders">
+            {% for order in orders %}
+                <tr>
+                    <td class="text-center"><span> {{ order.pk }} </span></td>
+                    <td class="text-center"><span> {{ order.product.name }} </span></td>
+                    <td class="text-center"><span> {{ order.amount }} </span></td>
+                    <td class="text-center"><span> {{ order.get_cost }} </span></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}
