@@ -1,0 +1,43 @@
+{% extends "base/base.html" %}
+
+{% block navbar_content_right %}
+    <li class="nav-item">
+        <a class="nav-link" href="{% url 'change_password' profile.pk %}">Change Password</a>
+    </li>
+{% endblock %}
+
+{% block content %}
+
+    <table class="table w-50 mx-auto">
+        <thead>
+        <tr>
+            <th scope="col" class="text-center"> Info</th>
+            <th scope="col" class="text-center"></th>
+        </tr>
+        </thead>
+        <tbody class="table_borders">
+        <tr>
+            <td class="text-center"><span> Username </span></td>
+            <td class="text-center"><span> {{ profile.user.username }} </span></td>
+        </tr>
+        <tr>
+            <td class="text-center"><span>  Phone </span></td>
+            <td class="text-center"><span> {{ profile.phone }} </span></td>
+        </tr>
+        <tr>
+            <td class="text-center"><span> Address </span></td>
+            <td class="text-center"><span> {{ profile.address}} </span></td>
+        </tr>
+
+        <tr>
+            <td class="text-center"><span> Photo </span></td>
+            <td class="text-center"><p> <img src={{ profile.profile_pic.url }} ></p></td>
+        </tr>
+    </table>
+
+    <form action="{% url 'edit_profile' profile.pk %}">
+        <div class="d-grid gap-2">
+            <input class="btn btn-primary mx-auto" type="submit" value="Edit"/>
+        </div>
+    </form>
+{% endblock %}
