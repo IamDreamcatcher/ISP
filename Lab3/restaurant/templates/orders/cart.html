@@ -1,5 +1,10 @@
 {% extends "base/base.html" %}
 {% block navbar_content_right %}
+
+    <li class="nav-item">
+        <a class="nav-link" href="{% url 'orders' %}">Orders</a>
+    </li>
+
 {% endblock %}
 
 {% block content %}

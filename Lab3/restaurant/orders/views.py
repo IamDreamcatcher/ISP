@@ -1,3 +1,6 @@
+import logging
+
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.db.models import Q
 from django.http import HttpResponseRedirect
 from django.urls import reverse_lazy
@@ -6,40 +9,55 @@ from django.views.generic import ListView, DeleteView
 
 from orders.models import Order
 
+logger = logging.getLogger("main_logger")
 
-class OrderListView(ListView):
+
+class OrderListView(LoginRequiredMixin, ListView):
     template_name = "orders/order_list.html"
     model = Order
     context_object_name = 'orders'
+    logger.info("use OrderListView")
 
     def get_queryset(self):
-        return Order.objects.filter(user=self.request.user).filter(Q(status="ACTIVE") | Q(status="DONE"))
+        return Order.objects.filter(user=self.request.user).filter(
+            Q(status="ACTIVE") | Q(status="DONE")).select_related('user').select_related('product')
 
 
-class CartView(ListView):
+class CartView(LoginRequiredMixin, ListView):
     template_name = "orders/cart.html"
     model = Order
     context_object_name = 'orders'
+    logger.info("use CartView")
 
     def get_queryset(self):
-        return Order.objects.filter(user=self.request.user, status="PENDING")
+        return Order.objects.filter(user=self.request.user, status="PENDING").select_related('user').select_related(
+            'product')
 
 
-class DeleteOrderView(DeleteView):
+class DeleteOrderView(LoginRequiredMixin, DeleteView):
     model = Order
     success_url = reverse_lazy("cart")
+    logger.info("use DeleteOrderView")
 
 
-class ClearCartView(View):
+class DeleteOrderFromHistory(LoginRequiredMixin, DeleteView):
+    model = Order
+    success_url = reverse_lazy("orders")
+    logger.info("use DeleteOrderFromHistory")
+
+
+class ClearCartView(LoginRequiredMixin, View):
     def post(self, request):
+        logger.info("use ClearCartView")
         cur_user = self.request.user
         Order.objects.filter(user=cur_user, status="PENDING").delete()
 
         return HttpResponseRedirect(reverse_lazy("cart"))
 
 
-class CheckoutView(View):
+class CheckoutView(LoginRequiredMixin, View):
     def post(self, request):
+        logger.info("use CheckoutView")
         cur_user = self.request.user
         Order.objects.filter(user=cur_user, status="PENDING").update(status="ACTIVE")
 

@@ -1,8 +1,8 @@
 {% extends "base/base.html" %}
-{% block navbarcontent %}
+{% block navbar_content_left %}
     {% if user.is_superuser %}
         <li class="nav-item">
-            <a class="nav-link" href="#">Add new category</a>
+            <a class="nav-link" href="{% url 'create_category' %}">Add new category</a>
         </li>
     {% endif %}
 
