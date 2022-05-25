@@ -1,21 +1,6 @@
 {% extends "base/base.html" %}
-{% block navbar_content_left %}
-    {% if user.is_superuser %}
-        <li class="nav-item">
-            <a class="nav-link" href="{% url 'update_product' product.pk %}">Edit product</a>
-        </li>
-    {% endif %}
-
-{% endblock %}
 {% block content %}
-    {% if user.is_superuser %}
-        <form method="post" action="{% url 'delete_product' product.pk %}">
-            {% csrf_token %}
-            <div class="d-grid gap-2 mt-5">
-                <input class="btn btn-primary mx-auto" type="submit" value="Delete product"/>
-            </div>
-        </form>
-    {% endif %}
+
     <table class="table w-50 mx-auto mt-2">
         <thead>
         <tr>

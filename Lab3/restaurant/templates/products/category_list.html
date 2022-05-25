@@ -1,12 +1,5 @@
 {% extends "base/base.html" %}
-{% block navbar_content_left %}
-    {% if user.is_superuser %}
-        <li class="nav-item">
-            <a class="nav-link" href="{% url 'create_category' %}">Add new category</a>
-        </li>
-    {% endif %}
 
-{% endblock %}
 {% block content %}
     <h4 class="text-center">Categories : </h4>
     <div class="album py-5 text-center">

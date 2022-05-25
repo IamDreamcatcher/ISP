@@ -4,11 +4,10 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.http import HttpResponseRedirect
 from django.shortcuts import get_object_or_404
 from django.urls import reverse_lazy
-from django.views.generic import ListView, DetailView, CreateView, FormView, UpdateView, DeleteView
+from django.views.generic import ListView, DetailView, FormView
 
 from orders.forms import OrderCreationForm
 from orders.models import Order
-from product.forms import ProductForm, CategoryForm
 from product.models import Product, Category
 
 logger = logging.getLogger("main_logger")
@@ -78,46 +77,5 @@ class OrderCreationView(LoginRequiredMixin, FormView):
 
         return HttpResponseRedirect(reverse_lazy("products"))
 
-
-class CreateProductView(LoginRequiredMixin, CreateView):
-    form_class = ProductForm
-    model = Product
-    template_name = "products/product_edit.html"
-    success_url = reverse_lazy("products")
-    logger.info("use CreateProductView")
-
-
-class UpdateProductView(LoginRequiredMixin, UpdateView):
-    form_class = ProductForm
-    model = Product
-    template_name = "products/product_edit.html"
-    success_url = reverse_lazy("products")
-    logger.info("use UpdateProductView")
-
-
-class DeleteProductView(LoginRequiredMixin, DeleteView):
-    model = Product
-    success_url = reverse_lazy("products")
-    logger.info("use DeleteProductView")
-
-
-class CreateCategoryView(LoginRequiredMixin, CreateView):
-    form_class = CategoryForm
-    model = Category
-    template_name = "products/category_edt.html"
-    success_url = reverse_lazy("categories")
-    logger.info("use CreateCategoryView")
-
-
-class UpdateCategoryView(LoginRequiredMixin, UpdateView):
-    form_class = CategoryForm
-    model = Category
-    template_name = "products/category_edt.html"
-    success_url = reverse_lazy("products")
-    logger.info("use UpdateCategoryView")
-
-
-class DeleteCategoryView(LoginRequiredMixin, DeleteView):
-    model = Category
-    success_url = reverse_lazy("categories")
-    logger.info("use DeleteCategoryView")
+    def form_invalid(self, form):
+        return HttpResponseRedirect(reverse_lazy("products"))
