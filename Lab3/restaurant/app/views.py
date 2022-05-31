@@ -1,17 +1,23 @@
 import logging
+from threading import Thread
 
 from django.conf import settings
 from django.contrib.auth import logout
 from django.contrib.auth.forms import PasswordChangeForm
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.models import User
 from django.contrib.auth.views import LoginView, PasswordChangeView
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect, HttpResponse
 from django.urls import reverse_lazy
+from django.utils.encoding import force_str
+from django.utils.http import urlsafe_base64_decode
 from django.views import View
 from django.views.generic import TemplateView, CreateView, DetailView, UpdateView
 
 from app.forms import RegisterUserForm, LoginUserForm, ProfileForm
 from app.models import Profile
+from app.tokens import account_activation_token
+from app.utils import send_activate_link
 
 logger = logging.getLogger("main_logger")
 
@@ -19,6 +25,21 @@ logger = logging.getLogger("main_logger")
 class HomePageView(TemplateView):
     template_name = "base/home.html"
     logger.info("use HomePageView")
+
+
+class AccountActivateView(View):
+    def get(self, request, *args, **kwargs):
+        try:
+            uid = force_str(urlsafe_base64_decode(self.kwargs['uidb64']))
+            user = User.objects.get(pk=uid)
+        except(TypeError, ValueError, OverflowError, User.DoesNotExist):
+            user = None
+        if user is not None and account_activation_token.check_token(user, self.kwargs['token']):
+            user.is_active = True
+            user.save()
+            return HttpResponse('Email confirmation is done. U can log in')
+        else:
+            return HttpResponse('Link is invalid')
 
 
 class RegisterUserView(CreateView):
@@ -30,8 +51,11 @@ class RegisterUserView(CreateView):
         user = form.save()
         profile = Profile()
         profile.user = user
+        user.is_active = False
         user.save()
         profile.save()
+
+        Thread(target=send_activate_link, args=(user, self.request), ).start()
 
         return HttpResponseRedirect(settings.LOGIN_URL)
 

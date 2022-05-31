@@ -6,6 +6,7 @@ from django.shortcuts import get_object_or_404
 from django.urls import reverse_lazy
 from django.views.generic import ListView, DetailView, FormView
 
+from orders.constants import ORDER_STATUS_PENDING
 from orders.forms import OrderCreationForm
 from orders.models import Order
 from product.models import Product, Category
@@ -65,10 +66,10 @@ class OrderCreationView(LoginRequiredMixin, FormView):
 
         product_id = self.kwargs['pk']
         order = form.save(commit=False)  # commit=False if we need to create filed ourselves
-        order.status = "PENDING"
+        order.status = ORDER_STATUS_PENDING
         order.user = self.request.user
         order.product = get_object_or_404(Product, id=product_id)
-        exists_order = Order.objects.filter(user=order.user, product=order.product, status="PENDING")
+        exists_order = Order.objects.filter(user=order.user, product=order.product, status=ORDER_STATUS_PENDING)
         if exists_order:
             exists_order[0].amount += order.amount
             exists_order[0].save()

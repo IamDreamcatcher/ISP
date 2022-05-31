@@ -13,6 +13,8 @@ import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
+import dj_database_url
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Quick-start development settings - unsuitable for production
@@ -24,7 +26,9 @@ SECRET_KEY = 'django-insecure-oz7!(#o4f$dx=ab(tr5m0^ygn_fb0xzp4t%8tf%w-iziijt*76
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+CSRF_TRUSTED_ORIGINS = ['https://dreamrestik.herokuapp.com', 'http://localhost:8000', 'http://0.0.0.0:8000']
+
+ALLOWED_HOSTS = ['*', '.herokuapp.com', '127.0.0.1:8000', '0.0.0.0:8000']
 
 # Application definition
 
@@ -74,20 +78,25 @@ WSGI_APPLICATION = 'restaurant.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'restaurants',
-        'USER': 'root',
-        'PASSWORD': 'root',
-        'HOST': '127.0.0.1',
-        'PORT': '5432',
-        'TEST': {
-            'NAME': 'test_db',
-        },
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': os.environ.get('POSTGRES_NAME'),
+#         'USER': os.environ.get('POSTGRES_USER'),
+#         'PASSWORD': os.environ.get('POSTGRES_PASSWORD'),
+#         'HOST': 'db',
+#         # 'NAME': 'restaurants',
+#         # 'USER': 'root',
+#         # 'PASSWORD': 'root',
+#         # 'HOST': '127.0.0.1',
+#         'PORT': 5432,
+#         'TEST': {
+#             'NAME': 'test_db',
+#         },
+#     }
+# }
+DATABASES = {'default': dj_database_url.config(
+    default='postgres://ccmsvamyqssbwb:73020d4cc0da845232258130844084e792b9d134f4a4cdb3f72599d7e0e21a30@ec2-99-80-170-190.eu-west-1.compute.amazonaws.com:5432/dm3pagrat33kr')}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
@@ -125,7 +134,8 @@ LOGIN_URL = '/login'
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
@@ -159,3 +169,8 @@ LOGGING = {
         }
     }
 }
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'dreamrestik@gmail.com'
+EMAIL_HOST_PASSWORD = 'Yjdfz6vjkjljqlox'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True

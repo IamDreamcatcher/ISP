@@ -8,12 +8,13 @@ from app.models import Profile
 
 class RegisterUserForm(UserCreationForm):
     username = forms.CharField(label="Username", widget=forms.TextInput(attrs={'class': 'form-input'}))
+    email = forms.EmailField(label="Email", required=True)
     password1 = forms.CharField(label="Password", widget=forms.PasswordInput(attrs={'class': 'form-input'}))
     password2 = forms.CharField(label="Confirm password", widget=forms.PasswordInput(attrs={'class': 'form-input'}))
 
     class Meta:
         model = User
-        fields = ('username', 'password1', 'password2')
+        fields = ('username', 'email', 'password1', 'password2')
 
 
 class LoginUserForm(AuthenticationForm):
